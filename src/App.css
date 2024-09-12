@@ -163,55 +163,55 @@ a {
 }
 
 .logo--accessibility {
-  background-image: url(./images/accessibility.svg);
+  background-image: url(./images/logos/accessibility.svg);
 }
 
 .logo--html5 {
-  background-image: url(./images/html.svg);
+  background-image: url(./images/logos/html.svg);
 }
 
 .logo--javascript {
-  background-image: url(./images/javascript.svg);
+  background-image: url(./images/logos/javascript.svg);
 }
 
 .logo--css3 {
-  background-image: url(./images/css.svg);
+  background-image: url(./images/logos/css.svg);
 }
 
 .logo--sass {
-  background-image: url(./images/sass.svg);
+  background-image: url(./images/logos/sass.svg);
 }
 
 .logo--react {
-  background-image: url(./images/react.svg);
+  background-image: url(./images/logos/react.svg);
 }
 
 .logo--typescript {
-  background-image: url(./images/typescript.svg);
+  background-image: url(./images/logos/typescript.svg);
 }
 
 .logo--vs-code {
-  background-image: url(./images/visual-studio-code.svg);
+  background-image: url(./images/logos/visual-studio-code.svg);
 }
 
 .logo--node-js {
-  background-image: url(./images/nodejs.svg);
+  background-image: url(./images/logos/nodejs.svg);
 }
 
 .logo--github {
-  background-image: url(./images/github.svg);
+  background-image: url(./images/logos/github.svg);
 }
 
 .logo--figma {
-  background-image: url(./images/figma.svg);
+  background-image: url(./images/logos/figma.svg);
 }
 
 .logo--photoshop {
-  background-image: url(./images/photoshop.svg);
+  background-image: url(./images/logos/photoshop.svg);
 }
 
 .logo--sql {
-  background-image: url(./images/sql.svg);
+  background-image: url(./images/logos/sql.svg);
 }
 
 .logo--linkedin {
@@ -526,7 +526,6 @@ a {
 err {
   color: red;
 }
-
 
 /* .read-the-docs {
   color: #888;
