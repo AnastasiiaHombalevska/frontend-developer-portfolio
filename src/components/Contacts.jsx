@@ -9,8 +9,8 @@ export default function Contacts() {
             <p className="contscts--descr">If you ever want to grab a coffee <span class="smallerTextContact">(virtually)</span> or just want a quick chat - you can find me on social media or you can send me a message here!</p>
 
             <div className="contacts--socials">
-              <a href="https://www.linkedin.com/in/anastasiia-hombalevska/" className="logo logo-linkedin"></a>
-              <a href="https://github.com/AnastasiiaHombalevska" className="logo logo-github"></a>
+              <a href="https://www.linkedin.com/in/anastasiia-hombalevska/" className="logo logo--linkedin"></a>
+              <a href="https://github.com/AnastasiiaHombalevska" className="logo logo--contact-github"></a>
             </div>
           </div>
 

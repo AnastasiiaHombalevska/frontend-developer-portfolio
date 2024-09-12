@@ -47,92 +47,30 @@ export default function Portfolio() {
         number={"four"}
         name={"Museum 2.0"}
         imgSourse={scrMuseum2}
-        description={"landing page screenshoot of museum"}
+        description={"landing page screenshoot of museum 2.0"}
         msg={"Museum 2.0 landing page"}
         skills={["HTML", "SASS(SCSS)"]}
         links={[{ "View live": "https://anastasiiahombalevska.github.io/art_museum2.0/" }, { "View github": "https://github.com/AnastasiiaHombalevska/art_museum2.0" }]}
       />
 
-    {/* <div className="portfolio--card card--five">
-      <h3 className="card--title">Creative Bakery</h3>
-        <img
-          src={scrCreativeBakery}
-          alt="landing page screenshoot of Creative Bakery"
-          className="card--image"
-        />
-
-        <div className="card--overlay--five overlay">
-        <h4 className="card--subtitle">Creative Bakery landing page</h4>
-        <ul className="card--list">
-          <li className="card--item">HTML</li>
-          <li className="card--item">SASS(SCSS)</li>
-        </ul>
-
-        <div className="card--btn-cont">
-          <a
-            href="https://anastasiiahombalevska.github.io/Creative_Bakery/"
-            target="_blank"
-            className="card--btn"
-          >View live
-          </a>
-          <a
-            href="https://github.com/AnastasiiaHombalevska/Creative_Bakery"
-            target="_blank"
-            className="card--btn"
-          >Github
-          </a>
-        </div>
-    </div>
-    </div> */}
       <Card
-        number={"two"}
-        name={"Random password generator"}
-        imgSourse={scrPasswordGenerator}
-        description={"screenshoot of random password generator"}
-        msg={"Museum landing page"}
-        skills={["HTML", "CSS", "JavaScript"]}
-        links={[{ "View live": "https://random-password-withjs.netlify.app/" }, { "View github": "https://github.com/AnastasiiaHombalevska/random-password-generator" }]}
+        number={"five"}
+        name={"Creative Bakery"}
+        imgSourse={scrCreativeBakery}
+        description={"landing page screenshoot of Creative Bakery"}
+        msg={"Creative Bakery landing page"}
+        skills={["HTML", "SASS (SCSS)"]}
+        links={[{ "View live": "https://anastasiiahombalevska.github.io/Creative_Bakery/" }, { "View github": "https://github.com/AnastasiiaHombalevska/Creative_Bakery" }]}
       />
 
-    {/* <div className="portfolio--card card--six">
-      <h3 className="card--title">Museum</h3>
-        <img
-          src={scrMuseum}
-          alt="landing page screenshoot of museum"
-          className="card--image"
-        />
-
-        <div className="card--overlay--six overlay">
-        <h4 className="card--subtitle">Museum landing page</h4>
-        <ul className="card--list">
-          <li className="card--item">HTML</li>
-          <li className="card--item">SASS(SCSS)</li>
-        </ul>
-
-        <div className="card--btn-cont">
-          <a
-            href="https://anastasiiahombalevska.github.io/art_museum/"
-            target="_blank"
-            className="card--btn"
-          >View live
-          </a>
-          <a
-            href="https://github.com/AnastasiiaHombalevska/art_museum"
-            target="_blank"
-            className="card--btn"
-          >Github
-          </a>
-        </div>
-    </div>
-    </div> */}
       <Card
-        number={"two"}
-        name={"Random password generator"}
-        imgSourse={scrPasswordGenerator}
-        description={"screenshoot of random password generator"}
-        msg={"App to create random passwords"}
-        skills={["HTML", "CSS", "JavaScript"]}
-        links={[{ "View live": "https://random-password-withjs.netlify.app/" }, { "View github": "https://github.com/AnastasiiaHombalevska/random-password-generator" }]}
+        number={"six"}
+        name={"Museum"}
+        imgSourse={scrMuseum}
+        description={"landing page screenshoot of museum"}
+        msg={"Museum landing page"}
+        skills={["HTML", "SASS(SCSS)"]}
+        links={[{ "View live": "https://anastasiiahombalevska.github.io/art_museum/" }, { "View github": "https://github.com/AnastasiiaHombalevska/art_museum" }]}
       />
   </section>
   )

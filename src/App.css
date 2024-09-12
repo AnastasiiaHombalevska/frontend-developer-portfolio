@@ -11,6 +11,7 @@ ul {
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 li,
@@ -70,7 +71,7 @@ a {
   margin: 50px 0;
 }
 
-.nav-list {
+.nav--list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,16 +79,16 @@ a {
   background-color: hsl(181, 52%, 27%);
 }
 
-.nav-link {
+.nav--link {
   color: hsl(144, 8%, 87%);
 }
 
-.nav-link:hover {
+.nav--link:hover {
   color: hsl(144, 8%, 87%);
   text-shadow: hsl(144, 7%, 13%) 1px 1px 1px;
 }
 
-.header-btns {
+.header--btns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,14 +134,14 @@ a {
   padding-bottom: 50px;
 }
 
-.skills-list {
+.skills--list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px 20px;
 }
 
-.skills-item {
+.skills--item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +150,6 @@ a {
   flex-shrink: 0;
   gap: 10px;
 }
-
 
 .logo {
   display: block;
@@ -162,60 +162,68 @@ a {
   transition: 0.3s;
 }
 
-.logo-html {
+.logo--accessibility {
+  background-image: url(./images/accessibility.svg);
+}
+
+.logo--html5 {
   background-image: url(./images/html.svg);
 }
 
-.logo-js {
+.logo--javascript {
   background-image: url(./images/javascript.svg);
 }
 
-.logo-css {
+.logo--css3 {
   background-image: url(./images/css.svg);
 }
 
-.logo-sass {
+.logo--sass {
   background-image: url(./images/sass.svg);
 }
 
-.logo-ts {
-  background-image: url(./images/typescript.svg);
-}
-
-.logo-react {
+.logo--react {
   background-image: url(./images/react.svg);
 }
 
-.logo-env {
+.logo--typescript {
+  background-image: url(./images/typescript.svg);
+}
+
+.logo--vs-code {
   background-image: url(./images/visual-studio-code.svg);
 }
 
-.logo-node {
+.logo--node-js {
   background-image: url(./images/nodejs.svg);
 }
 
-.logo-git {
+.logo--github {
   background-image: url(./images/github.svg);
 }
 
-.logo-adob {
+.logo--figma {
+  background-image: url(./images/figma.svg);
+}
+
+.logo--photoshop {
   background-image: url(./images/photoshop.svg);
 }
 
-.logo-linkedin {
-  background-image: url(./images/socials/socials-linkedin.svg);
-  background-position: center;
-  width: 100px;
-  height: 30px;
-  padding: 0;
+.logo--sql {
+  background-image: url(./images/sql.svg);
 }
 
-.logo-github {
+.logo--linkedin {
+  background-image: url(./images/socials/socials-linkedin.svg);
+  width: 100px;
+  height: 30px;
+}
+
+.logo--contact-github {
   background-image: url(./images/socials/socials-github.svg);
-  background-position: center;
   width: 80px;
   height: 30px;
-  padding: 0;
 }
 
 .logo:hover {
@@ -258,10 +266,6 @@ a {
   width: 300px;
   height: auto;
   border-radius: 5px;
-}
-
-.card--subtitle {
-  text-align: center;
 }
 
 .overlay {
@@ -346,7 +350,7 @@ a {
   opacity: 1;
 }
 
-.card--six{
+.card--six {
   position: relative;
 }
 
@@ -359,6 +363,7 @@ a {
 }
 
 .card--subtitle {
+  text-align: center;
   text-shadow: 2px 2px 2px hsl(144, 7%, 13%);
 }
 

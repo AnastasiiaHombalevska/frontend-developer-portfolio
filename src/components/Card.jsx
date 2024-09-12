@@ -9,7 +9,7 @@ export default function Card(props) {
       <img
           src={imgSourse}
           alt={description}
-          className='card--image'
+          className="card--image"
       />
 
       <div className={`card--overlay--${number} overlay`}>
