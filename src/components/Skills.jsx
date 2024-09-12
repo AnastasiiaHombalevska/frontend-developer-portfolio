@@ -10,7 +10,7 @@ export default function Skills() {
     <h2 className="skills--title">My Toolkit</h2>
 
       <ul className="skills--list">
-        {skills.map(skill => <Skill name={skill} />)}
+        {skills.map(skill => <Skill name={skill} key={skill} />)}
     </ul>
   </section>
   )
