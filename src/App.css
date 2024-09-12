@@ -509,6 +509,25 @@ a {
   text-shadow: hsl(144, 7%, 13%) 1px 1px 1px;
 }
 
+.formMessage {
+  width: 400px;
+  height: 400;
+  background-color: hsl(181, 52%, 27%);
+  position: fixed;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: hsl(144, 8%, 87%);
+  padding: 30px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.err {
+  color: red;
+}
+
+
 /* .read-the-docs {
   color: #888;
 } */
