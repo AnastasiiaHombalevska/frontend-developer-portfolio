@@ -29,7 +29,7 @@ export default function FormMessage({ state, userName }) {
             <p className="formMessage--msg">{err}</p>
           </>
           )
-      }
+    }
     </div>
   )
 }

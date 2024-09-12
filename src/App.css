@@ -523,7 +523,7 @@ a {
   z-index: 1000;
 }
 
-err {
+.err {
   color: red;
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import FormMessage from "./FormMessage";
 
@@ -23,6 +23,16 @@ export default function Form() {
       setMessageState(true);
     }
   }
+
+  useEffect(() => {
+    if (messageState !== null) {
+      const timer = setTimeout(() => {
+        setMessageState(null);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [messageState]);
 
   return (
       <form className="contacts--form form" onSubmit={sendMsg}>
