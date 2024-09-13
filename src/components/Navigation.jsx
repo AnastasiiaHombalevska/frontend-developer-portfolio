@@ -8,7 +8,7 @@ export default function Navigation() {
           <li><a href="#skills" className="nav--link">Skills</a></li>
           <li><a href="#portfolio" className="nav--link">Portfolio</a></li>
           <li><a href="#contacts" className="nav--link">Contacts</a></li>
-          <li><a href="#portfolio" className="nav--link">Get resume</a></li>
+          <li className="download-cont"><a href="#portfolio" className="nav--link download-resume">Get resume</a></li>
         </ul>
     </nav>
   )

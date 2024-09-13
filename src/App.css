@@ -88,6 +88,35 @@ a {
   text-shadow: hsl(144, 7%, 13%) 1px 1px 1px;
 }
 
+.download-cont {
+  position: relative;
+}
+
+.download-resume::after {
+  content: "Download";
+  top: 0;
+  left: 0;
+  right: 0;
+  color: hsl(144, 7%, 13%);
+  background-color: hsl(144, 8%, 87%);
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  text-align: center;
+  align-items: center;
+
+  opacity: 0;
+  display: none;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.download-resume:hover::after {
+  opacity: 1;
+  display: inline-block;
+  text-shadow: none;
+}
+
 .header--btns {
   display: flex;
   justify-content: center;

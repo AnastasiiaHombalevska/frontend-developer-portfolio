@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Card(props) {
-  const { number, name, imgSourse, description, msg, skills, links } = props;
+export default function Card({ data, key }) {
+  const { number, name, imgSourse, description, msg, skills, links } = data;
 
   return (
-    <div className={`portfolio--card card--${number}`}>
+    <div className={`portfolio--card card--${number}`} id={key}>
       <h3 className="card--title">{name}</h3>
       <img
           src={imgSourse}
@@ -15,13 +15,13 @@ export default function Card(props) {
       <div className={`card--overlay--${number} overlay`}>
         <h4 className="card--subtitle">{msg}</h4>
         <ul className="card--list">
-          {skills.map((skill, index) =>
+          {skills && skills.map((skill, index) =>
               <li className="card--item" key={`item--${index}`}>{skill}</li>)
           }
         </ul>
 
         <div className="card--btn-cont">
-          {links.map(item => {
+          {links && links.map(item => {
             const [key, value] = Object.entries(item)[0];
 
             return (

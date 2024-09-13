@@ -7,18 +7,19 @@ export default function Form() {
   const [userName, setUserName] = useState("");
 
   function sendMsg(e) {
+    const form = e.target;
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(form);
     const name = formData.get("name");
     const email = formData.get("email");
     const message = formData.get("message");
 
     if (!name || !email || !message) {
-      setMessageState(false)
+      setMessageState(false);
       return;
     } else {
-      e.target.reset();
+      form.reset();
       setUserName(name);
       setMessageState(true);
     }
