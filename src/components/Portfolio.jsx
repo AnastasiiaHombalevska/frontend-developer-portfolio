@@ -75,7 +75,9 @@ const cardData = [
 export default function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
-      {cardData && cardData.map((cardData, index) => <Card data={cardData} key={cardData[index]} />)}
+      <h2 className="portfolio--title">Portfolio</h2>
+
+      {cardData && cardData.map((cardData, index) => <Card data={cardData} key={index} />)}
   </section>
   )
 }
