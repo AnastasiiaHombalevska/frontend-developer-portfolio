@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/Skills.css";
+
 import Skill from "./Skill";
 
 const skills = ["Accessibility", "HTML5", "CSS3", "JavaScript", "SASS", "React", "Typescript", "VS Code", "GitHub", "Figma", "Photoshop", "Node.js", "SQL"]

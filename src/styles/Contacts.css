@@ -1,0 +1,28 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 2em;
+  box-sizing: border-box;
+
+  margin-block: 100px;
+}
+
+.contacts--container {
+  width: 100%;
+}
+
+.contscts--title {
+  padding-bottom: 30px;
+}
+
+.contacts--socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  padding-top: 30px;
+}

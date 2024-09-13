@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import FormMessage from "./FormMessage";
+
+import "../styles/Form.css";
 
 export default function Form() {
   const [messageState, setMessageState] = useState(null);

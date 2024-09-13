@@ -1,0 +1,15 @@
+.skill--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  flex-shrink: 0;
+  gap: 30px;
+}
+
+@media screen and (min-width: 601px) {
+  .skill--item {
+    width: 20%;
+  }
+}

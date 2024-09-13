@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 import scrUnitConversion from "../images/portfolio-screenshots/metric-Imperial-unit-conversion.png";
 import scrPasswordGenerator from "..//images/portfolio-screenshots/random-password-generator.png";
@@ -7,7 +8,7 @@ import scrCreativeBakery from "..//images/portfolio-screenshots/creative-bakery.
 import scrMuseum from "..//images/portfolio-screenshots/museum.png";
 import scrMuseum2 from "..//images/portfolio-screenshots/museum2-0.png";
 
-import Card from "./Card";
+import "../styles/Portfolio.css";
 
 const cardData = [
   {

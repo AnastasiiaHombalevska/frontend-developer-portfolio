@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/Card.css"
+
 export default function Card({ data, key }) {
   const { number, name, imgSourse, description, msg, skills, links } = data;
   

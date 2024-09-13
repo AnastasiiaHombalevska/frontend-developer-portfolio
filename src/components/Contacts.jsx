@@ -1,6 +1,8 @@
 import React from "react";
 import Form from "./Form";
 
+import "../styles/Contacts.css";
+
 export default function Contacts() {
   return (
     <section className="contacts" id="contacts">

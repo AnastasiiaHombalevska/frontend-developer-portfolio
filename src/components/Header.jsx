@@ -1,6 +1,9 @@
 import React from "react";
 import Navigation from "./Navigation";
 
+import "../styles/Header.css";
+
+
 export default function Header() {
   return (
     <header className="header">
@@ -17,8 +20,8 @@ export default function Header() {
         </div>
 
         <div className="header--btns">
-          <a href="" className="btn" download>Get resume</a>
-          <a href="#portfolio" className="btn">View portfolio</a> 
+          <a href="" className="header--btn" download>Get resume</a>
+          <a href="#portfolio" className="header--btn">View portfolio</a> 
         </div>
     </header>
   )

@@ -1,0 +1,152 @@
+.card--image {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: hsla(181, 52%, 27%, 0.9);
+
+  border-radius: 25px;
+  padding: 15px;
+  box-sizing: border-box;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+.card--one {
+  position: relative;
+}
+
+.card--overlay--one {
+  position: absolute;
+}
+
+.card--overlay--one:hover {
+  opacity: 1;
+}
+
+.card--two {
+  position: relative;
+}
+
+.card--overlay--two {
+  position: absolute;
+}
+
+.card--overlay--two:hover {
+  opacity: 1;
+}
+
+.card--tree {
+  position: relative;
+}
+
+.card--overlay--tree {
+  position: absolute;
+}
+
+.card--overlay--tree:hover {
+  opacity: 1;
+}
+
+.card--four {
+  position: relative;
+}
+
+.card--overlay--four {
+  position: absolute;
+}
+
+.card--overlay--four:hover {
+  opacity: 1;
+}
+
+.card--five {
+  position: relative;
+}
+
+.card--overlay--five {
+  position: absolute;
+}
+
+.card--overlay--five:hover {
+  opacity: 1;
+}
+
+.card--six {
+  position: relative;
+}
+
+.card--overlay--six {
+  position: absolute;
+}
+
+.card--overlay--six:hover {
+  opacity: 1;
+}
+
+.card--subtitle {
+  text-align: center;
+  text-shadow: 2px 2px 2px hsl(144, 7%, 13%);
+}
+
+.card--list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-block: 30px;
+}
+
+.card--item {
+  background-color: hsl(144, 8%, 87%);
+  color: hsl(144, 7%, 13%);
+  padding: 3px 14px;
+  border-radius: 5px;
+}
+
+.card--btn-cont {
+  display: flex;
+  gap: 10px;
+}
+
+.card--btn {
+  color: hsl(144, 7%, 13%);
+  background-color: hsl(127, 26%, 69%);
+  padding: 3px 14px;
+  border-radius: 5px;
+}
+
+.card--btn:hover {
+  color: hsl(144, 7%, 13%);
+  text-shadow: hsl(144, 8%, 87%) 2px 2px 2px;
+}
+
+.card--overlay:hover {
+  opacity: 1;
+}
+
+.card--link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: hsl(144, 8%, 87%);
+  transition: 0.3s ease-in-out;
+}
+
+.card--link:hover {
+  color: hsl(144, 8%, 87%);
+  text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
+}

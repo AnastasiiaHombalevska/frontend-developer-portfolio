@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.form--field {
+  width: 100%;
+  color: hsl(144, 7%, 13%);
+  background-color: hsla(152, 37%, 46%, 0.2);
+  border: 2px solid hsl(144, 7%, 13%);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.form--field:hover {
+  border: 2px solid hsla(152, 37%, 46%, 0.9);
+  cursor: pointer;
+}
+
+.form--btn {
+  font-family: inherit;
+  color: hsl(144, 8%, 87%);
+  background-color: hsl(181, 52%, 27%);
+  border: 2px solid hsl(144, 7%, 13%);
+  border-radius: 25px;
+  padding: 15px 75px;
+  box-sizing: border-box;
+}
+
+.form--btn:hover {
+  color: hsl(144, 8%, 87%);
+  text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
+}

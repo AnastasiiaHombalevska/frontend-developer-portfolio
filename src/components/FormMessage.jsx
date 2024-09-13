@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/FormMessage.css";
+
 function updateName(name) {
   if (!name) {
     return;

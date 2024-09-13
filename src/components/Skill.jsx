@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/Skill.css";
+
 export default function Skill(props) {
   const { name } = props;
 
@@ -12,7 +14,7 @@ export default function Skill(props) {
   }
   
   return (
-    <li className="skills--item" key={name}>
+    <li className="skill--item" key={name}>
       <span className={`logo logo--${createClassName()}`}></span>{name}
     </li>
   )
