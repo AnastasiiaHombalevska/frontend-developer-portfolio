@@ -1,24 +1,25 @@
 .icon {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   display: block;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
-  transition: 0.3s;
-
-  &:hover {
-    filter: drop-shadow(0 0 2em hsl(144, 7%, 13%));
-  }
-
-  &--menu {
-    background-image: url(../images/icons/icon-menu.png);
+  @include hover(scale, 1.1);
+  
+  @include onSM {
     width: 32px;
     height: 32px;
   }
 
+  &--menu {
+    background-image: url(../images/icons/icon-menu.png);
+  }
+
   &--close {
     background-image: url(../images/icons/icon-cross.png);
+    width: 22px;
+    height: 22px;
   }
 }

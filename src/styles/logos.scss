@@ -5,18 +5,18 @@
   background-position: center;
   width: 57px;
   height: 57px;
-
-  transition: 0.3s;
-  
-  &:hover {
-    filter: drop-shadow(0 0 2em hsl(144, 7%, 13%));
-    text-shadow: hsl(181, 52%, 27%) 2px 2px 2px;
-  }
+  @include hover(scale, 1.1);
 
   &--author {
     background-image: url(../images/logos/logo-hombalevska.png);
     width: 185px;
     height: 17px;
+    display: block;
+
+    @include onSM {
+      width: 256px;
+      height: 23px;
+    }
   }
 }
 

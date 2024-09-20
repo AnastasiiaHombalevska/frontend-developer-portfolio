@@ -15,6 +15,7 @@ export default function Header() {
             <br/>
             <span className="header--position">A frontend developer.</span>
           </h1>
+          
           <p className="header--greting">
             I love creating the magic of turning signs and symbols into
             beautiful and functional web pages✨

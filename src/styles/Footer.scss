@@ -2,15 +2,15 @@
   background-color: $secondBackgroundColor;
   border-top: 1px solid rgba($mainTextColor, 0.3);
 
-  // .nav {
-  //   //   display: block;
-  // }
-
   &--link {
     color: $mainTextColor;
-    display: block;
+    // display: block;
     text-align: center;
 
     margin: 24px auto 40px;
+  }
+  
+  .nav--btn {
+      display: none;
   }
 }

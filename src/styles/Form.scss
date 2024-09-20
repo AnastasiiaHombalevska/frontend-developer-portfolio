@@ -2,15 +2,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
 
   margin-top: 24px;
   gap: 16px;
-
-  // @media (min-width: 601px) {
-  //   max-width: 540px;
-  //   margin: 0;
-  // }
 
   &--field {
     color: #acacad;
@@ -40,34 +34,9 @@
   // }
 
   &--btn {
-    font-family: inherit;
-    color: $mainTextColor;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid $mainTextColor;
-    padding: 20px 102px;
-    border-radius: 8px;
-    box-sizing: border-box;
+    @include forBtn;
   
-    position: relative;
-    margin-top: 8px;
-  
-    &::after {
-      content: "";
-      width: 13px;
-      height: 13px;
-      background-image: url(../images/icons/icon-arrow.png);
-      background-size: cover;
-      top: calc(50% - 7px);
-      right: 82px;
-  
-      position: absolute;
-    }
-  
-    &:hover {
-      color: $secondTextColor;
-      border: 1px solid $secondTextColor;
-      text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
-    }
+    @include hover(border, 1px solid $secondTextColor);
+    @include hover(text-shadow, $secondTextColor 2px 2px 2px);
   }
 }
