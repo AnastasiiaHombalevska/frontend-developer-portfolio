@@ -1,6 +1,10 @@
 .header {
   .nav {
     display: none;
+
+    @include onMD {
+      display: block;
+    }
   }
 
   &--container {
@@ -11,25 +15,41 @@
     padding-inline: 16px;
     margin-top: 60px;
     box-sizing: border-box;
+
+    @include onSM {
+      padding-inline: 24px;
+    }
   }
 
   &--title {
     font-size: 23px;
     font-weight: 400;
+
+    @include onSM {
+      font-size: 33px;
+    }
   }
 
   &--position {
     font-size: 23px;
     font-weight: 400;
     color: $secondTextColor;
+
+    @include onSM {
+      font-size: 33px;
+    }
   }
 
   &--greting {
     padding-top: 8px;
+
+    @include onSM {
+      font-size: 19px;
+    }
   }
 
   &--image {
-    width: 343px;
+    width: 100%;
     height: 415px;
     background-image: url(../images/IMG_1644.jpg);
     background-position: center;
@@ -39,64 +59,12 @@
     border-radius: 24px;
 
     margin: 40px 0 80px;
-  }
 
-  // &--btns {
-  //   // width: 100%;
-  //   display: none;
-  //   // flex-direction: column;
-  //   // text-align: center;
-  //   // gap: 30px;
-  //   // padding-inline: 2rem;
-  //   // margin-bottom: 50px;
-  //   // box-sizing: border-box;
-  // }
+    @include onSM {
+      width: 100%;
+      height: 568px;
 
-  // &--btn {
-  //   // color: hsl(144, 8%, 87%);
-  //   // background-color: hsl(181, 52%, 27%);
-  //   // border: 2px solid hsl(144, 7%, 13%);
-  //   // border-radius: 25px;
-  //   // padding: 15px 75px;
-
-  //   &:hover {
-  //     color: hsl(144, 8%, 87%);
-  //     text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
-  //   }
-  // }
-}
-
-@media screen and (min-width: 601px) {
-  .header--container {
-    flex-direction: row;
-    gap: 50px;
-
-    margin-block: 120px;
-  }
-
-  .header--introduse {
-    width: 50%;
-  }
-
-  .header--image {
-    width: 350px;
-    height: 350px;
-    background-image: url(../images/IMG_1644.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid hsl(144, 7%, 13%);
-    border-radius: 25px;
-  }
-
-  .header--btns {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  .header--btns {
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+      margin-bottom: 118px;
+    }
   }
 }

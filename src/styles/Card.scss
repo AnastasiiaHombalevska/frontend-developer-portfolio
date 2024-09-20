@@ -1,7 +1,10 @@
 .card {
   width: 317px;
+  height: 282px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 
   &--image {
     width: 317px;
@@ -12,15 +15,30 @@
   &--title {
     font-size: 19px;
     font-weight: 400;
-    padding: 19px 0 16px;
   }
 
   &--list {
     &-item {
       display: inline;
-
       font-size: 11px;
-      padding-right: 8px;
+      position: relative;
+      padding-right: 10px;
+
+      &:not(:first-child) {
+        padding-left: 12px;
+      }
+
+      &:not(:first-of-type)::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: $mainTextColor;
+        display: block;
+        top: calc(50% - 2px);
+        left: 0;
+
+        position: absolute;
+      }
     }
   }
 
@@ -28,57 +46,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-  
     background-color: rgba($mainTextColor, 0.3);
   
     border-radius: 16px;
-    padding: 15px;
+    padding: 16px;
     box-sizing: border-box;
-  
+
     top: 0;
     left: 0;
     right: 0;
     height: 205px;
     opacity: 0;
-  
-    transition: 0.3s;
+
+    @include hover(opacity, 1);
   }
 
   &--btn-cont {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &--btn {
-    width: 50%;
-    font-size: 16px;
-    color: $mainTextColor;
-    background-color: transparent;
-    border: 1px solid $mainTextColor;
-    padding: 20px 32px;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
+    @include forBtn;
+    background-color: rgba($secondBackgroundColor, 0.6);
 
-  &--btn::after {
-    content: '';
-    background-image: url(../images/icons/icon-arrow.png);
-    width: 13px;
-    height: 13px;
-    background-size: cover;
-    background-position: center;
-    display: block;
-  }
-
-  &--btn:hover {
-    color: hsl(144, 7%, 13%);
-    text-shadow: hsl(144, 8%, 87%) 2px 2px 2px;
-  }
-
-  &--overlay:hover {
-    opacity: 1;
+    @include hover(text-shadow, $secondTextColor 2px 2px 2px);
   }
 }
 
@@ -88,10 +81,10 @@
 
 .card--overlay--one {
   position: absolute;
-}
 
-.card--overlay--one:hover {
-  opacity: 1;
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
 
 .card--two {
@@ -100,10 +93,10 @@
 
 .card--overlay--two {
   position: absolute;
-}
 
-.card--overlay--two:hover {
-  opacity: 1;
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
 
 .card--tree {
@@ -112,10 +105,10 @@
 
 .card--overlay--tree {
   position: absolute;
-}
 
-.card--overlay--tree:hover {
-  opacity: 1;
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
 
 .card--four {
@@ -124,10 +117,10 @@
 
 .card--overlay--four {
   position: absolute;
-}
 
-.card--overlay--four:hover {
-  opacity: 1;
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
 
 .card--five {
@@ -136,10 +129,10 @@
 
 .card--overlay--five {
   position: absolute;
-}
 
-.card--overlay--five:hover {
-  opacity: 1;
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
 
 .card--six {
@@ -148,21 +141,8 @@
 
 .card--overlay--six {
   position: absolute;
+
+  &:hover {
+    @include hover(opacity, 1);
+  }
 }
-
-.card--overlay--six:hover {
-  opacity: 1;
-}
-
-// .card--link {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 10px;
-//   color: hsl(144, 8%, 87%);
-//   transition: 0.3s ease-in-out;
-// }
-
-// .card--link:hover {
-//   color: hsl(144, 8%, 87%);
-//   text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
-// }

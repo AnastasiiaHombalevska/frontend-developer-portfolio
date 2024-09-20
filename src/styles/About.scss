@@ -5,44 +5,16 @@
   box-sizing: border-box;
 
   &--section {
-    width: 100%;
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-top: 1px solid rgba($mainTextColor, 0.3);
-
-    display: flex;
-    justify-content: space-between;
-
-    padding: 29px 0 24px 12px;
-    position: relative;
-    box-sizing: border-box;
-
-    &::before {
-      content: "";
-      width: 4px;
-      height: 4px;
-      background-color: $mainTextColor;
-      display: block;
-      top: 50%;
-      left: 0;
-      position: absolute;
-    }
+    @include forSectionIntro;
   }
 
   &--insp {
-    opacity: 40%;
+    opacity: 0.4;
     text-transform: none;
   }
 
   &--title {
-    font-size: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 1px solid $mainTextColor;
-    padding-bottom: 4px;
-    width: fit-content;
-    margin-bottom: 24px;
+    @include forTitles;
   }
 
   &--sub-title {
@@ -51,16 +23,4 @@
     color: $secondTextColor;
     margin-bottom: 24px;
   }
-
-  // &--introduction {
-  //   color: hsl(144, 7%, 13%);
-  // }
 }
-
-
-
-// @media screen and (min-width: 601px) {
-//   .about {
-//     margin-block: 100px;
-//   }
-// }
