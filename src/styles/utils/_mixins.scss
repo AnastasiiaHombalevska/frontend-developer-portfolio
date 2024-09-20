@@ -17,13 +17,22 @@
   }
 }
 
-@mixin forHeaders {
+@mixin forHeaders {}
 
+@mixin forSubheaders {}
+
+@mixin paddingInline {
+  padding-inline: 16px;
+
+  @include onSM {
+    padding-inline: 16px;
+  }
+
+  @include onMD() {
+    padding-inline: 120px;
+  }
 }
 
-@mixin forSubheaders {
-
-}
 
 @mixin forTitles {
   font-size: 32px;

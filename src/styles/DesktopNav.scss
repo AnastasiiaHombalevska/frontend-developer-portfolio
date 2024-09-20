@@ -1,5 +1,4 @@
 .nav {
-  @include onMD {
     &--container {
       padding: 24px 120px;
       display: flex;
@@ -27,5 +26,5 @@
         @include hover(border, 1px solid $secondTextColor);
         @include hover(text-shadow, $secondTextColor 2px 2px 2px);
       }
-    }
+
 }

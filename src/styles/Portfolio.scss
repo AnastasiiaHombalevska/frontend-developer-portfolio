@@ -1,5 +1,5 @@
 .portfolio {
-  padding-inline: 16px;
+  @include paddingInline;
   margin-block: 80px;
 
   &--section {
@@ -7,7 +7,7 @@
   }
 
   &--insp {
-    opacity: 40%;
+    opacity: 0.4;
     text-transform: none;
   }
 

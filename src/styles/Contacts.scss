@@ -1,11 +1,13 @@
 .contacts {
   background-color: $secondBackgroundColor;
-  padding-block: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 16px;
+
+  @include paddingInline;
+  padding-block: 40px;
+
   box-sizing: border-box;
 
   &--title {

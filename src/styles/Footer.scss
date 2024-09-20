@@ -4,15 +4,13 @@
 
   &--link {
     color: $mainTextColor;
-    display: block;
+    // display: block;
     text-align: center;
 
     margin: 24px auto 40px;
   }
-
-  @include onMD {
-    .nav--btn {
+  
+  .nav--btn {
       display: none;
-    }
   }
 }

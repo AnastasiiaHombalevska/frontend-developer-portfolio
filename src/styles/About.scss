@@ -1,6 +1,7 @@
 .about {
   // width: 100%;
-  padding-inline: 16px;
+  @include paddingInline;
+
   margin-block: 80px;
   box-sizing: border-box;
 
