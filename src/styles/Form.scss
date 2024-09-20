@@ -16,13 +16,13 @@
     color: #acacad;
     font-family: inherit;
     background-color: $mainBackgroundColor;
-    border: none;
+    border: 1px solid $mainBackgroundColor;
     border-radius: 16px;
     padding: 16px;
     box-sizing: border-box;
   
     &:hover {
-      border: 2px solid hsla(152, 37%, 46%, 0.9);
+      border: 1px solid $secondTextColor;
       cursor: pointer;
     }
 
@@ -32,12 +32,12 @@
     }
   }
 
-  &--textarea {
-    &::placeholder {
-      color: #acacad;
-      font-family: inherit;
-    }
-  }
+  // &--textarea {
+  //   &::placeholder {
+  //     color: #acacad;
+  //     font-family: inherit;
+  //   }
+  // }
 
   &--btn {
     font-family: inherit;
@@ -65,7 +65,8 @@
     }
   
     &:hover {
-      color: hsl(144, 8%, 87%);
+      color: $secondTextColor;
+      border: 1px solid $secondTextColor;
       text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
     }
   }
