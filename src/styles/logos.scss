@@ -1,0 +1,81 @@
+.logo {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 57px;
+  height: 57px;
+
+  transition: 0.3s;
+  
+  &:hover {
+    filter: drop-shadow(0 0 2em hsl(144, 7%, 13%));
+    text-shadow: hsl(181, 52%, 27%) 2px 2px 2px;
+  }
+
+  &--author {
+    background-image: url(../images/logos/logo-hombalevska.png);
+    width: 185px;
+    height: 17px;
+  }
+}
+
+.logo--accessibility {
+  background-image: url(../images/logos/accessibility.svg);
+}
+
+.logo--html5 {
+  width: 50px;
+  background-image: url(../images/logos/html.svg);
+}
+
+.logo--css3 {
+  width: 50px;
+  background-image: url(../images/logos/css.svg);
+}
+
+.logo--javascript {
+  width: 50px;
+  background-image: url(../images/logos/javascript.svg);
+}
+
+.logo--sass {
+  width: 75px;
+  background-image: url(../images/logos/sass.svg);
+}
+
+.logo--react {
+  width: 50px;
+  background-image: url(../images/logos/react.svg);
+}
+
+.logo--typescript {
+  background-image: url(../images/logos/typescript.svg);
+}
+
+.logo--vs-code {
+  width: 59px;
+  background-image: url(../images/logos/visual-studio-code.svg);
+}
+
+.logo--node-js {
+  width: 93px;
+  background-image: url(../images/logos/nodejs.svg);
+}
+
+.logo--github {
+  width: 59px;
+  background-image: url(../images/logos/github.svg);
+}
+
+.logo--figma {
+  background-image: url(../images/logos/figma.svg);
+}
+
+.logo--photoshop {
+  background-image: url(../images/logos/photoshop.svg);
+}
+
+.logo--sql {
+  background-image: url(../images/logos/sql.png);
+}

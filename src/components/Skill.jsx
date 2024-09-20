@@ -12,7 +12,7 @@ export default function Skill(props) {
   }
   
   return (
-    <li className="skills--item" key={name}>
+    <li className="skill--item" key={name}>
       <span className={`logo logo--${createClassName()}`}></span>{name}
     </li>
   )

@@ -1,0 +1,168 @@
+.card {
+  width: 317px;
+  display: flex;
+  flex-direction: column;
+
+  &--image {
+    width: 317px;
+    height: 205px;
+    border-radius: 16px;
+  }
+
+  &--title {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 19px 0 16px;
+  }
+
+  &--list {
+    &-item {
+      display: inline;
+
+      font-size: 11px;
+      padding-right: 8px;
+    }
+  }
+
+  &--overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    background-color: rgba($mainTextColor, 0.3);
+  
+    border-radius: 16px;
+    padding: 15px;
+    box-sizing: border-box;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 205px;
+    opacity: 0;
+  
+    transition: 0.3s;
+  }
+
+  &--btn-cont {
+    display: flex;
+    gap: 10px;
+  }
+
+  &--btn {
+    width: 50%;
+    font-size: 16px;
+    color: $mainTextColor;
+    background-color: transparent;
+    border: 1px solid $mainTextColor;
+    padding: 20px 32px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  &--btn::after {
+    content: '';
+    background-image: url(../images/icons/icon-arrow.png);
+    width: 13px;
+    height: 13px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+
+  &--btn:hover {
+    color: hsl(144, 7%, 13%);
+    text-shadow: hsl(144, 8%, 87%) 2px 2px 2px;
+  }
+
+  &--overlay:hover {
+    opacity: 1;
+  }
+}
+
+.card--one {
+  position: relative;
+}
+
+.card--overlay--one {
+  position: absolute;
+}
+
+.card--overlay--one:hover {
+  opacity: 1;
+}
+
+.card--two {
+  position: relative;
+}
+
+.card--overlay--two {
+  position: absolute;
+}
+
+.card--overlay--two:hover {
+  opacity: 1;
+}
+
+.card--tree {
+  position: relative;
+}
+
+.card--overlay--tree {
+  position: absolute;
+}
+
+.card--overlay--tree:hover {
+  opacity: 1;
+}
+
+.card--four {
+  position: relative;
+}
+
+.card--overlay--four {
+  position: absolute;
+}
+
+.card--overlay--four:hover {
+  opacity: 1;
+}
+
+.card--five {
+  position: relative;
+}
+
+.card--overlay--five {
+  position: absolute;
+}
+
+.card--overlay--five:hover {
+  opacity: 1;
+}
+
+.card--six {
+  position: relative;
+}
+
+.card--overlay--six {
+  position: absolute;
+}
+
+.card--overlay--six:hover {
+  opacity: 1;
+}
+
+// .card--link {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+//   color: hsl(144, 8%, 87%);
+//   transition: 0.3s ease-in-out;
+// }
+
+// .card--link:hover {
+//   color: hsl(144, 8%, 87%);
+//   text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
+// }

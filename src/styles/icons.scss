@@ -1,0 +1,24 @@
+.icon {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: 0.3s;
+
+  &:hover {
+    filter: drop-shadow(0 0 2em hsl(144, 7%, 13%));
+  }
+
+  &--menu {
+    background-image: url(../images/icons/icon-menu.png);
+    width: 32px;
+    height: 32px;
+  }
+
+  &--close {
+    background-image: url(../images/icons/icon-cross.png);
+  }
+}

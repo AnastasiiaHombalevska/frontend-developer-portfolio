@@ -1,0 +1,84 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+
+  box-sizing: border-box;
+  transition: all 0.3s;
+  transform: translateX(-100px);
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondBackgroundColor;
+  padding-inline: 16px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  &:target {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+
+  &--container {
+    margin-top: 181px;
+  }
+
+  &--nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($mainTextColor, 0.3);
+
+    padding: 14px 0;
+  }
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  &--link {
+    color: $mainTextColor;
+  }
+
+  &--btn {
+    font-family: inherit;
+    color: $mainTextColor;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid $mainTextColor;
+    padding: 20px 52px 20px 32px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background-image: url(../images/icons/icon-arrow.png);
+      background-size: cover;
+      top: calc(50% - 7px);
+      right: 32px;
+  
+      position: absolute;
+    }
+  
+    &:hover {
+      color: $secondTextColor;
+      border: 1px solid $secondTextColor;
+      text-shadow: hsl(144, 7%, 13%) 2px 2px 2px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.skill--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondBackgroundColor;
+  border-radius: 16px;
+  width: 163px;
+  flex-shrink: 0;
+  gap: 16px;
+  padding: 16px;
+
+  box-sizing: border-box;
+}
+
+// @media screen and (min-width: 601px) {
+//   .skill--item {
+//     width: 20%;
+//   }
+// }
