@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FormMessage from "./FormMessage";
 
-import "../styles/Form.scss";
-
 export default function Form() {
   const [messageState, setMessageState] = useState(null);
   const [userName, setUserName] = useState("");
@@ -38,19 +36,33 @@ export default function Form() {
 
   return (
       <form className="contacts--form form" onSubmit={sendMsg}>
-        <label>Name:
-          <input type="text" name="name" className="form--field form--input"/>
-        </label>
+          <input
+            type="text"
+            name="name"
+            className="form--field form--input"
+            placeholder="Name:"
+            autoComplete="off"
+          />
 
-        <label>Email:
-          <input type="email" name="email" className="form--field form--input"/>
-        </label>
+          <input
+            type="email"
+            name="email"
+            className="form--field form--input"
+            placeholder="Email:"
+            autoComplete="off"
+          />
 
-        <label>Message:
-          <textarea name="message" cols="30" rows="10" className="form--field form--textarea"></textarea>
-        </label>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            className="form--field form--textarea"
+            placeholder="Message:"
+          >
+          </textarea>
 
-        <button type="submit" className="form--btn">Send message</button>
+      <button type="submit" className="form--btn">Send message</button>
+      
       {messageState !== null && <FormMessage state={messageState} userName={userName} />}
     </form>
   )
