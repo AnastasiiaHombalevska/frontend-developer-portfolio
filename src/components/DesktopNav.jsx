@@ -1,8 +1,8 @@
 import React from "react";
 
-import "../styles/Navigation.css";
+import "../styles/DesktopNav.scss";
 
-export default function Navigation() {
+export default function DesktopNav() {
   return (
     <nav className="nav">
         <ul className="nav--list">

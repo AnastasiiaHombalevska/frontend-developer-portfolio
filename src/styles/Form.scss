@@ -5,6 +5,11 @@
 
   margin-top: 50px;
   gap: 20px;
+
+  @media (min-width: 601px) {
+    max-width: 540px;
+    margin: 0;
+  }
 }
 
 .form--field {

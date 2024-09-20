@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/Skills.css";
+import "../styles/Skills.scss";
 
 import Skill from "./Skill";
 

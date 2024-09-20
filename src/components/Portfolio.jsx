@@ -8,15 +8,12 @@ import scrCreativeBakery from "..//images/portfolio-screenshots/creative-bakery.
 import scrMuseum from "..//images/portfolio-screenshots/museum.png";
 import scrMuseum2 from "..//images/portfolio-screenshots/museum2-0.png";
 
-import "../styles/Portfolio.css";
-
 const cardData = [
   {
     number: "one",
     name: "Metric/Imperial Unit Conversion",
     imgSourse: scrUnitConversion,
     description: "screenshoot of metric/Imperial Unit Conversion",
-    msg: "App to convert values",
     skills: ["HTML", "CSS", "JavaScript"],
     links: [{ "View live": "https://brilliant-cajeta-6a28eb.netlify.app/" }, { "View github": "https://github.com/AnastasiiaHombalevska/unit-converter" }]
   },
@@ -26,7 +23,6 @@ const cardData = [
     name: "Random password generator",
     imgSourse: scrPasswordGenerator,
     description: "screenshoot of random password generator",
-    msg: "App to create random passwords",
     skills: ["HTML", "CSS", "JavaScript"],
     links: [{ "View live": "https://random-password-withjs.netlify.app/" }, { "View github": "https://github.com/AnastasiiaHombalevska/random-password-generator" }]
   
@@ -37,7 +33,6 @@ const cardData = [
     name: "CV 2D-game with JavaScript",
     imgSourse: scr2DGame,
     description: "screenshoot of CV 2D-game with JavaScript",
-    msg: "A 2d game with the opportunity to learn more about the author of this portfolio-CV",
     skills: ["HTML", "CSS", "JavaScript"],
     links: [{ "View live": "https://anastasiiahombalevska.github.io/AnastasiiaHombalevska2D_portfolio_game-/" }, { "View github": "https://github.com/AnastasiiaHombalevska/AnastasiiaHombalevska2D_portfolio_game-" }]
   },
@@ -47,7 +42,6 @@ const cardData = [
     name: "Museum 2.0",
     imgSourse: scrMuseum2,
     description: "landing page screenshoot of museum 2.0",
-    msg: "Museum 2.0 landing page",
     skills: ["HTML", "SASS(SCSS)"],
     links: [{ "View live": "https://anastasiiahombalevska.github.io/art_museum2.0/" }, { "View github": "https://github.com/AnastasiiaHombalevska/art_museum2.0" }]
   },
@@ -57,7 +51,6 @@ const cardData = [
     name: "Creative Bakery",
     imgSourse: scrCreativeBakery,
     description: "landing page screenshoot of Creative Bakery",
-    msg: "Creative Bakery landing page",
     skills: ["HTML", "SASS (SCSS)"],
     links: [{ "View live": "https://anastasiiahombalevska.github.io/Creative_Bakery/" }, { "View github": "https://github.com/AnastasiiaHombalevska/Creative_Bakery" }]
   },
@@ -67,7 +60,6 @@ const cardData = [
     name: "Museum",
     imgSourse: scrMuseum,
     description: "landing page screenshoot of museum",
-    msg: "Museum landing page",
     skills: ["HTML", "SASS(SCSS)"],
     links: [{ "View live": "https://anastasiiahombalevska.github.io/art_museum/" }, { "View github": "https://github.com/AnastasiiaHombalevska/art_museum" }]
   }
@@ -76,9 +68,12 @@ const cardData = [
 export default function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
-      <h2 className="portfolio--title">Portfolio</h2>
+      <h2 className="portfolio--section">My projects <span className="portfolio--insp">From Vision to Reality</span></h2>
+      <h3 className="portfolio--title">Featured work</h3>
 
-      {cardData && cardData.map((cardData, index) => <Card data={cardData} key={index} />)}
+      <div className="portfolio--card-container">
+        {cardData && cardData.map((cardData, index) => <Card data={cardData} key={index} />)}
+      </div>
   </section>
   )
 }

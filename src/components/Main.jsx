@@ -8,11 +8,11 @@ import Contacts from "./Contacts";
 export default function Main() {
   return (
     <main className="main">
+        <Portfolio />
+
         <About />
 
         <Skills />
-
-        <Portfolio />
 
         <Contacts />
       </main>
