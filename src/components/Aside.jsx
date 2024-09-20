@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Aside() {
   return (
-    <aside className="aside">
+    <aside className="aside" id="aside">
       <ul className="aside--nav-list">
-          <li><a href="#menu" className="aside--nav-link logo logo--author"></a></li>
-          <li><a href="#menu" className="aside--nav-link icon icon--close"></a></li>
+          <li><a href="#" className="aside--nav-link logo logo--author"></a></li>
+          <li><a href="#" className="aside--nav-link icon icon--close"></a></li>
         </ul>
 
       <div className="aside--container">
