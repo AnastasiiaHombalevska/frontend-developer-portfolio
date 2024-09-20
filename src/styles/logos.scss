@@ -3,8 +3,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50px;
-  height: 50px;
+  width: 57px;
+  height: 57px;
 
   transition: 0.3s;
   
@@ -25,22 +25,27 @@
 }
 
 .logo--html5 {
+  width: 50px;
   background-image: url(../images/logos/html.svg);
 }
 
-.logo--javascript {
-  background-image: url(../images/logos/javascript.svg);
-}
-
 .logo--css3 {
+  width: 50px;
   background-image: url(../images/logos/css.svg);
 }
 
+.logo--javascript {
+  width: 50px;
+  background-image: url(../images/logos/javascript.svg);
+}
+
 .logo--sass {
+  width: 75px;
   background-image: url(../images/logos/sass.svg);
 }
 
 .logo--react {
+  width: 50px;
   background-image: url(../images/logos/react.svg);
 }
 
@@ -49,14 +54,17 @@
 }
 
 .logo--vs-code {
+  width: 59px;
   background-image: url(../images/logos/visual-studio-code.svg);
 }
 
 .logo--node-js {
+  width: 93px;
   background-image: url(../images/logos/nodejs.svg);
 }
 
 .logo--github {
+  width: 59px;
   background-image: url(../images/logos/github.svg);
 }
 
@@ -69,7 +77,7 @@
 }
 
 .logo--sql {
-  background-image: url(../images/logos/sql.svg);
+  background-image: url(../images/logos/sql.png);
 }
 
 .logo--linkedin {

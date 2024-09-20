@@ -23,28 +23,63 @@
       padding-right: 8px;
     }
   }
-}
 
-.overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  &--overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    background-color: rgba($mainTextColor, 0.3);
+  
+    border-radius: 16px;
+    padding: 15px;
+    box-sizing: border-box;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 205px;
+    opacity: 0;
+  
+    transition: 0.3s;
+  }
 
-  background-color: rgba($mainTextColor, 0.3);
+  &--btn-cont {
+    display: flex;
+    gap: 10px;
+  }
 
-  border-radius: 16px;
-  padding: 15px;
-  box-sizing: border-box;
+  &--btn {
+    width: 50%;
+    font-size: 16px;
+    color: $mainTextColor;
+    background-color: transparent;
+    border: 1px solid $mainTextColor;
+    padding: 20px 32px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
 
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 205px;
-  opacity: 0;
+  &--btn::after {
+    content: '';
+    background-image: url(../images/icons/icon-arrow.png);
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-position: center;
+    display: block;
+  }
 
-  transition: 0.3s;
+  &--btn:hover {
+    color: hsl(144, 7%, 13%);
+    text-shadow: hsl(144, 8%, 87%) 2px 2px 2px;
+  }
+
+  &--overlay:hover {
+    opacity: 1;
+  }
 }
 
 .card--one {
@@ -116,41 +151,6 @@
 }
 
 .card--overlay--six:hover {
-  opacity: 1;
-}
-
-.card--btn-cont {
-  display: flex;
-  gap: 10px;
-}
-
-.card--btn {
-  width: 50%;
-  font-size: 16px;
-  color: $mainTextColor;
-  background-color: transparent;
-  border: 1px solid $mainTextColor;
-  padding: 20px 32px;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.card--btn::after {
-  content: '';
-  background-image: url(../images/icons/icon-arrow.png);
-  width: 13px;
-  height: 13px;
-  background-size: contain;
-  background-position: center;
-  display: block;
-}
-
-.card--btn:hover {
-  color: hsl(144, 7%, 13%);
-  text-shadow: hsl(144, 8%, 87%) 2px 2px 2px;
-}
-
-.card--overlay:hover {
   opacity: 1;
 }
 

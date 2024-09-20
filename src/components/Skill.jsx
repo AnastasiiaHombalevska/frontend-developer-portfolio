@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../styles/Skill.scss";
-
 export default function Skill(props) {
   const { name } = props;
 

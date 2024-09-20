@@ -21,7 +21,7 @@ export default function Card({ data, key }) {
         }
       </ul>
 
-      <div className={`card--overlay--${number} overlay`}>
+      <div className={`card--overlay--${number} card--overlay`}>
         <div className="card--btn-cont">
           {links && links.map(item => {
             const [key, value] = Object.entries(item)[0];
