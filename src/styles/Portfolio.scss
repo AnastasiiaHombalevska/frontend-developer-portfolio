@@ -2,6 +2,10 @@
   @include paddingInline;
   margin-block: 80px;
 
+  @include onMD {
+    margin-block: 120px;
+  }
+
   &--section {
     @include forSectionIntro;
   }
@@ -11,15 +15,51 @@
     text-transform: none;
   }
 
+  &--filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+
+    @include onSM {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &--btns-container {
+    width: 412px;
+    overflow-x: auto;
+    display: flex;
+    gap: 24px;
+  }
+
+  &--btn {
+    border: none;
+    color: $mainTextColor;
+    font-family: inherit;
+    background-color: inherit;
+
+    @include hover(color, $secondTextColor);
+  }
+
   &--title {
     @include forTitles;
+    margin: 0;
   }
 
   &--card-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
     overflow-x: auto;
-    justify-content: start;
+
+    @include onSM {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 }

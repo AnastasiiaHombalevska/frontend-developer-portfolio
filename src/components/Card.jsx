@@ -1,9 +1,7 @@
 import React from "react";
 
-export default function Card({ data, key }) {
-  const { number, name, imgSourse, description, msg, skills, links } = data;
-  
-  console.log("Card component rendered with data:", data);
+export default function Card({ data }) {
+  const { number, name, imgSourse, description, skills, links, key } = data;
 
   return (
     <div className={`card card--${number}`} id={key}>

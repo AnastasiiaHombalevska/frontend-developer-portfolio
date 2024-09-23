@@ -25,14 +25,13 @@
   padding-inline: 16px;
 
   @include onSM {
-    padding-inline: 16px;
+    padding-inline: 24px;
   }
 
-  @include onMD() {
-    padding-inline: 120px;
-  }
+  // @include onMD() {
+  //   padding-inline: 120px;
+  // }
 }
-
 
 @mixin forTitles {
   font-size: 32px;
@@ -89,7 +88,6 @@
     background-image: url(../images/icons/icon-arrow.png);
     background-size: cover;
     top: calc(50% - 6px);
-    right: calc(20% - 6px);
 
     position: absolute;
   }

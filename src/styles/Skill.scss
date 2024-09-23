@@ -11,4 +11,10 @@
   padding: 16px;
 
   box-sizing: border-box;
+
+  @include onSM {
+    width: 221px;
+    padding: 24px;
+    font-size: 23px;
+  }
 }

@@ -4,7 +4,7 @@ export default function DesktopNav() {
   return (
     <nav className="nav">
       <div className="nav--container">
-        <a href="#menu" className="nav--link logo logo--author"></a>
+        <a href="#" className="nav--logo logo logo--author"></a>
 
         <ul className="nav--list">
             <li><a href="#portfolio" className="nav--link">Work</a></li>
