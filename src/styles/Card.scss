@@ -6,10 +6,20 @@
   justify-content: space-between;
   box-sizing: border-box;
 
+  @include onSM {
+    width: 696px;
+    height: 577px;
+  }
+
   &--image {
     width: 317px;
     height: 205px;
     border-radius: 16px;
+
+    @include onSM {
+      width: 696px;
+      height: 500px;
+    }
   }
 
   &--title {

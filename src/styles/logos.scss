@@ -12,10 +12,10 @@
     width: 185px;
     height: 17px;
 
-    // @include onSM {
-    //   width: 256px;
-    //   height: 23px;
-    // }
+    @include onSM {
+      width: 256px;
+      height: 23px;
+    }
   }
 }
 
