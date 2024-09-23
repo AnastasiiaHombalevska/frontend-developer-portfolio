@@ -1,17 +1,39 @@
 .nav {
     &--container {
-      padding: 24px 120px;
+      @include paddingInline;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      box-sizing: border-box;
+
+      @include onSM {
+        flex-direction: row;
+      }
+    }
+
+    &--logo {
+      @include onSM {
+        width: 218px;
+        height: 20px;
+
+        padding-block: 25px;
+      }
     }
 
     &--list {
         display: flex;
-        flex-direction: row;
-        gap: 54px;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        gap: 24px;
+        margin-top: 40px;
+
+        @include onSM {
+          flex-direction: row;
+          gap: 57px;
+          margin-top: 0;
+        }
       }
 
       &--link {
@@ -26,5 +48,4 @@
         @include hover(border, 1px solid $secondTextColor);
         @include hover(text-shadow, $secondTextColor 2px 2px 2px);
       }
-
 }

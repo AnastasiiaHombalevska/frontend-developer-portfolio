@@ -11,12 +11,11 @@
     background-image: url(../images/logos/logo-hombalevska.png);
     width: 185px;
     height: 17px;
-    display: block;
 
-    @include onSM {
-      width: 256px;
-      height: 23px;
-    }
+    // @include onSM {
+    //   width: 256px;
+    //   height: 23px;
+    // }
   }
 }
 
