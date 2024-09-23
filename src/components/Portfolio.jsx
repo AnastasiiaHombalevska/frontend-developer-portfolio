@@ -10,7 +10,7 @@ import scrMuseum2 from "..//images/portfolio-screenshots/museum2-0.png";
 
 const cardData = [
   {
-    number: "one",
+    number: 1,
     name: "Metric/Imperial Unit Conversion",
     imgSourse: scrUnitConversion,
     description: "screenshoot of metric/Imperial Unit Conversion",
@@ -19,7 +19,7 @@ const cardData = [
   },
 
   {
-    number: "two",
+    number: 2,
     name: "Random password generator",
     imgSourse: scrPasswordGenerator,
     description: "screenshoot of random password generator",
@@ -29,7 +29,7 @@ const cardData = [
   },
 
   {
-    number: "tree",
+    number: 3,
     name: "CV 2D-game with JavaScript",
     imgSourse: scr2DGame,
     description: "screenshoot of CV 2D-game with JavaScript",
@@ -38,7 +38,7 @@ const cardData = [
   },
 
   {
-    number: "four",
+    number: 4,
     name: "Museum 2.0",
     imgSourse: scrMuseum2,
     description: "landing page screenshoot of museum 2.0",
@@ -47,7 +47,7 @@ const cardData = [
   },
 
   {
-    number: "five",
+    number: 5,
     name: "Creative Bakery",
     imgSourse: scrCreativeBakery,
     description: "landing page screenshoot of Creative Bakery",
@@ -56,7 +56,7 @@ const cardData = [
   },
 
   {
-    number: "six",
+    number: 6,
     name: "Museum",
     imgSourse: scrMuseum,
     description: "landing page screenshoot of museum",

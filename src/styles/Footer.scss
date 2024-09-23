@@ -6,10 +6,16 @@
     color: $mainTextColor;
     text-align: center;
 
+    @include paddingInline;
+
     margin: 24px auto 40px;
+
+    @include onMD {
+      padding-block: 40px;
+    }
   }
-  
+
   .nav--btn {
-      display: none;
+    display: none;
   }
 }

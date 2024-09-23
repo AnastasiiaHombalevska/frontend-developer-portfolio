@@ -7,6 +7,11 @@
   margin-top: 24px;
   gap: 16px;
 
+  @include onMD {
+    margin-bottom: 80px;
+    max-width: 540px;
+  }
+
   &--field {
     color: #acacad;
     font-family: inherit;
@@ -39,9 +44,15 @@
   
     @include hover(border, 1px solid $secondTextColor);
     @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-
+    
     &::after {
-      right: calc(39% - 6px);
+      right: calc(31% - 6px);
+    }
+
+    @include onSM {
+      &::after {
+        right: calc(39% - 6px);
+      }
     }
   }
 }

@@ -10,8 +10,18 @@
 
   box-sizing: border-box;
 
+  @include onMD {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &--container {
     max-width: 700px;
+
+    @include onMD {
+      margin-top: 60px;
+      min-width: 621px;
+    }
   }
 
   &--title {

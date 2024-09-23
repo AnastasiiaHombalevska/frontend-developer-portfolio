@@ -1,68 +1,72 @@
 .nav {
-    &--container {
-      @include paddingInline;
-      display: flex;
-      flex-direction: column;
+  &--container {
+    @include paddingInline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    @include onSM {
+      flex-direction: row;
+    }
+
+    @include onMD {
       justify-content: space-between;
-      align-items: center;
-      box-sizing: border-box;
+      // margin: 0 auto;
+    }
+  }
 
-      @include onSM {
-        flex-direction: row;
-      }
+  &--logo {
+    padding-block: 24px;
 
-      @include onMD {
-        justify-content: space-between;
-        // margin: 0 auto;
-      }
+    @include onSM {
+      width: 218px;
+      height: 20px;
     }
 
-    &--logo {
-      @include onSM {
-        width: 218px;
-        height: 20px;
+    @include onSM {
+      width: 255px;
+      height: 23px;
 
-        padding-block: 25px;
-      }
-
-      @include onSM {
-        width: 255px;
-        height: 23px;
-
-        padding-block: 25px;
-      }
+      padding-block: 25px;
     }
 
-    &--list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 24px;
-        margin-top: 40px;
+    @include onMD {
+      padding-block: 40px;
+    }
+  }
 
-        @include onSM {
-          flex-direction: row;
-          gap: 57px;
-          margin-top: 0;
-        }
-      }
+  &--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-block: 24px;
 
-      &--link {
-        color: $mainTextColor;
-      }
+    @include onSM {
+      flex-direction: row;
+      gap: 57px;
+      margin-top: 0;
+    }
+  }
 
-      &--btn {
-        display: none;
+  &--link {
+    color: $mainTextColor;
+  }
 
-        @include onMD {
-          display: block;
-          @include forBtn;
-          width: 183px;
-          padding: 20px 52px 20px 32px;
-          
-          @include hover(border, 1px solid $secondTextColor);
-          @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-        }
-      }
+  &--btn {
+    display: none;
+
+    @include onMD {
+      display: block;
+      @include forBtn;
+      width: 183px;
+      padding: 20px 52px 20px 32px;
+
+      @include hover(border, 1px solid $secondTextColor);
+      @include hover(text-shadow, $secondTextColor 2px 2px 2px);
+    }
+  }
 }

@@ -1,13 +1,11 @@
 .header {
-  // .header--top {
-  //   display: none;
+  .nav--container {
+    display: none;
 
-  //   @include onMD {
-  //     display: flex;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //   }
-  // }
+    @include onMD {
+      display: flex;
+    }
+  }
 
   &--btn {
     @include forBtn;
