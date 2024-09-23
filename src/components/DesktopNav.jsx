@@ -12,6 +12,8 @@ export default function DesktopNav() {
             <li><a href="#skills" className="nav--link">Skills</a></li>
             <li><a href="#contacts" className="nav--link">Contacts</a></li>
         </ul>
+
+        <button className="nav--btn">Get resume</button>
       </div>
     </nav>
   )

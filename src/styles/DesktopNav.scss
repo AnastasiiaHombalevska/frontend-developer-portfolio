@@ -10,12 +10,24 @@
       @include onSM {
         flex-direction: row;
       }
+
+      @include onMD {
+        justify-content: space-between;
+        // margin: 0 auto;
+      }
     }
 
     &--logo {
       @include onSM {
         width: 218px;
         height: 20px;
+
+        padding-block: 25px;
+      }
+
+      @include onSM {
+        width: 255px;
+        height: 23px;
 
         padding-block: 25px;
       }
@@ -41,11 +53,16 @@
       }
 
       &--btn {
-        @include forBtn;
-        width: 183px;
-        padding: 20px 52px 20px 32px;
+        display: none;
 
-        @include hover(border, 1px solid $secondTextColor);
-        @include hover(text-shadow, $secondTextColor 2px 2px 2px);
+        @include onMD {
+          display: block;
+          @include forBtn;
+          width: 183px;
+          padding: 20px 52px 20px 32px;
+          
+          @include hover(border, 1px solid $secondTextColor);
+          @include hover(text-shadow, $secondTextColor 2px 2px 2px);
+        }
       }
 }

@@ -2,6 +2,10 @@
   @include paddingInline;
   margin-block: 80px;
 
+  @include onMD {
+    margin-block: 120px;
+  }
+
   &--section {
     @include forSectionIntro;
   }

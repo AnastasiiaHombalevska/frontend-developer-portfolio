@@ -28,11 +28,10 @@
     padding-inline: 24px;
   }
 
-  @include onMD() {
-    padding-inline: 120px;
-  }
+  // @include onMD() {
+  //   padding-inline: 120px;
+  // }
 }
-
 
 @mixin forTitles {
   font-size: 32px;

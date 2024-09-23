@@ -7,12 +7,8 @@ export default function Header() {
   return (
     <header className="header">
       <MobileNav />
-      
-      <div className="header--top">
-        <DesktopNav />
-        <button className="header--btn">Get resume</button>
-      </div>
-      
+      <DesktopNav />
+
       <div className="header--container">
         <div className="header--introduse">
           <h1 className="header--title">Hello! I'm Anastasiia Hombalevska
