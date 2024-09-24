@@ -4,17 +4,23 @@
   justify-content: center;
   align-items: center;
   background-color: $secondBackgroundColor;
-  border-radius: 16px;
   width: 163px;
   flex-shrink: 0;
   gap: 16px;
+  border-radius: 16px;
   padding: 16px;
-
   box-sizing: border-box;
 
   @include onSM {
     width: 221px;
     padding: 24px;
     font-size: 23px;
+  }
+
+  @include onMD {
+    width: 310px;
+    flex-direction: row;
+    justify-content: start;
+
   }
 }

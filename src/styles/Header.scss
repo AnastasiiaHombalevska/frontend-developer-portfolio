@@ -22,6 +22,7 @@
   &--container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     @include paddingInline;
@@ -31,46 +32,36 @@
 
     @include onMD {
       flex-direction: row;
+      gap: 60px;
       margin-top: 0;
     }
   }
 
   &--introduse {
-    max-width: 781px;
+    @include onLD {
+      width: 781px;
+    }
   }
 
   &--title {
-    font-size: 23px;
-    font-weight: 400;
-
-    @include onSM {
-      font-size: 33px;
-    }
+    @include forHeaders;
   }
 
   &--position {
-    font-size: 23px;
-    font-weight: 400;
+    @include forHeaders;
     color: $secondTextColor;
-
-    @include onSM {
-      font-size: 33px;
-    }
   }
 
   &--greting {
     padding-top: 8px;
-
-    @include onSM {
-      font-size: 19px;
-    }
+    @include forText;
   }
 
   &--image {
     width: 100%;
     height: 415px;
     background-image: url(../images/IMG_1644.jpg);
-    background-position: center;
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     border: 10px solid $mainTextColor;

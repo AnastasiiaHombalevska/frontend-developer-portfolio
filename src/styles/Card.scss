@@ -1,24 +1,27 @@
 .card {
-  width: 317px;
-  height: 282px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 18px;
   box-sizing: border-box;
-
-  @include onSM {
-    width: 696px;
-    height: 577px;
-  }
 
   &--image {
     width: 317px;
     height: 205px;
     border-radius: 16px;
-
+    
     @include onSM {
       width: 696px;
       height: 500px;
+    }
+
+    @include onMD {
+      width: 458px;
+      height: 430px;
+    }
+
+    @include onLD {
+      width: 480px;
+      height: 430px;
     }
   }
 
@@ -31,6 +34,7 @@
     &-item {
       display: inline;
       font-size: 11px;
+      font-weight: 400;
       position: relative;
       padding-right: 10px;
 
@@ -75,6 +79,10 @@
       height: 500px;
       padding: 24px;
     }
+
+    @include onMD {
+      height: 430px;
+    }
   }
 
   &--btn-cont {
@@ -98,12 +106,20 @@
     }
 
     @include onSM {
-      width: 320px;
+      // width: 320px;
 
       &::after {
         right: calc(19% - 6px);
       }
     }
+  }
+
+  &--small {
+    width: 528px;
+  }
+
+  &--big {
+    width: 752px;
   }
 }
 

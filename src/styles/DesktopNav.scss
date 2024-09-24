@@ -13,7 +13,6 @@
 
     @include onMD {
       justify-content: space-between;
-      // margin: 0 auto;
     }
   }
 
@@ -47,13 +46,20 @@
 
     @include onSM {
       flex-direction: row;
-      gap: 57px;
+      gap: 37px;
       margin-top: 0;
+    }
+
+    @include onMD {
+      gap: 57px;
     }
   }
 
   &--link {
     color: $mainTextColor;
+    position: relative;
+
+    @include forHoverLinks;
   }
 
   &--btn {

@@ -17,15 +17,20 @@
 
   &--filter-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 24px;
     margin-bottom: 24px;
     box-sizing: border-box;
 
     @include onSM {
-      flex-direction: column;
-      align-items: start;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    @include onMD {
+      gap: 0;
     }
   }
 
@@ -48,18 +53,34 @@
   &--title {
     @include forTitles;
     margin: 0;
+
+    @include onSM {
+      margin: 0;
+    }
   }
 
   &--card-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     gap: 16px;
-    overflow-x: auto;
+    overflow-x: scroll;
 
     @include onSM {
       flex-direction: column;
+      align-items: center;
       gap: 40px;
+    }
+
+    @include onMD {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+
+    @include onLD {
+      gap: 80px;
     }
   }
 }
