@@ -1,5 +1,4 @@
 .about {
-  // width: 100%;
   @include paddingInline;
 
   margin-block: 80px;
@@ -26,16 +25,25 @@
   }
 
   &--sub-title {
-    font-size: 23px;
-    font-weight: 400;
+    @include forHeaders;
     color: $secondTextColor;
-    margin-bottom: 24px;
+
+    @include onSM {
+      font-size: 28px;
+    }
+  }
+
+  &--introduction {
+    @include forText;
+
+    @include onSM {
+      margin-top: 28px;
+    }
   }
 
   &--bottom-container {
     @include onMD {
       width: 800px;
-      // max-width: 845px;
     }
   }
 }

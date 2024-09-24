@@ -8,7 +8,7 @@ import scrMuseum2 from "./images/portfolio-screenshots/museum2-0.png";
 export default [
   {
     number: 1,
-    name: "Metric/Imperial Unit Conversion",
+    name: "Unit Conversion",
     imgSourse: scrUnitConversion,
     description: "screenshoot of metric/Imperial Unit Conversion",
     skills: ["HTML", "CSS", "JavaScript"],
