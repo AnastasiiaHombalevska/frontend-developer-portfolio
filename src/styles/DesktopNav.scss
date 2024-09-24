@@ -54,6 +54,9 @@
 
   &--link {
     color: $mainTextColor;
+    position: relative;
+
+    @include forHoverLinks;
   }
 
   &--btn {

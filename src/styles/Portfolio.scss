@@ -59,7 +59,15 @@
 
     @include onSM {
       flex-direction: column;
+      width: 100%;
+      // align-items: start;
       gap: 40px;
+    }
+
+    @include onMD {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 60px;
     }
   }
 }
