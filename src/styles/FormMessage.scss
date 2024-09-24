@@ -1,17 +1,23 @@
 .formMessage {
-  width: 400px;
-  height: 400px;
-  background-color: hsl(181, 52%, 27%);
-  position: fixed;
-  top: 60%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  color: hsl(144, 8%, 87%);
-  padding: 30px;
+  padding: 14px 24px;
+  text-align: center;
+  color: $mainTextColor;
+  background-color: $secondBackgroundColor;
+  border: 1px solid $secondBackgroundColor;
+
   border-radius: 8px;
   z-index: 1000;
-}
+  top: 30%;
+  left: 0;
+  right: 0;
+  
+  position: absolute;
 
-.err {
-  color: red;
+  &.err {
+    border: 1px solid red;
+  }
+
+  &.success {
+    border: 1px solid $secondTextColor;
+  }
 }
