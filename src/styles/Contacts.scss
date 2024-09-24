@@ -13,14 +13,17 @@
   @include onMD {
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
+    padding-block: 0;
   }
 
   &--container {
     max-width: 700px;
 
     @include onMD {
-      margin-top: 60px;
+      // margin-top: 60px;
       min-width: 621px;
+    margin-top: 80px;
     }
   }
 
