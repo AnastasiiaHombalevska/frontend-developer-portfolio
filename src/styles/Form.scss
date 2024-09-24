@@ -20,6 +20,7 @@
     border-radius: 16px;
     padding: 16px;
     box-sizing: border-box;
+    outline: none;
   
     &:hover {
       border: 1px solid $secondTextColor;
@@ -32,12 +33,15 @@
     }
   }
 
-  // &--textarea {
-  //   &::placeholder {
-  //     color: #acacad;
-  //     font-family: inherit;
-  //   }
-  // }
+  &--textarea {
+    resize: none;
+    overflow: auto;
+
+    &::placeholder {
+      color: #acacad;
+      font-family: inherit;
+    }
+  }
 
   &--btn {
     @include forBtn;
@@ -52,6 +56,12 @@
     @include onSM {
       &::after {
         right: calc(39% - 6px);
+      }
+    }
+
+    @include onMD {
+      &::after {
+        right: calc(33% - 6px);
       }
     }
   }

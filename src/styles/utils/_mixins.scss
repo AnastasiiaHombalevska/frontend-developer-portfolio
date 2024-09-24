@@ -67,6 +67,14 @@
     left: 0;
     position: absolute;
   }
+
+  @include onMD {
+    padding-bottom: 40px;
+
+    &::before {
+      top: 41%;
+    }
+  }
 }
 
 @mixin forBtn {

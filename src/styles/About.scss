@@ -5,6 +5,13 @@
   margin-block: 80px;
   box-sizing: border-box;
 
+  &--container {
+    @include onMD {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &--section {
     @include forSectionIntro;
   }
@@ -23,5 +30,12 @@
     font-weight: 400;
     color: $secondTextColor;
     margin-bottom: 24px;
+  }
+
+  &--bottom-container {
+    @include onMD {
+      width: 800px;
+      // max-width: 845px;
+    }
   }
 }

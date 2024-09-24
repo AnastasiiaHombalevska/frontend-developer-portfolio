@@ -14,6 +14,10 @@
 
   &--title {
     @include forTitles;
+
+    @include onMD {
+      margin-bottom: 80px;
+    }
   }
 
   &--sub-title {
@@ -30,5 +34,9 @@
     gap: 16px 17px;
 
     margin-bottom: 80px;
+
+    @include onMD {
+    gap: 40px 44px;
+    }
   }
 }
