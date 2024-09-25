@@ -1,6 +1,5 @@
 import React from "react";
-
-const RESUME_PATH = "https://drive.google.com/file/d/1xyJAcNW9SXGM3xIp174O_OB9p6ggP__i/view?usp=drive_link";
+import ResumeLink from "./Resume";
 
 export default function DesktopNav() {
   return (
@@ -15,9 +14,7 @@ export default function DesktopNav() {
             <li><a href="#contacts" className="nav--link">Contacts</a></li>
         </ul>
 
-        <a href={RESUME_PATH} target="_blanck">
-          <button className="nav--btn">View resume</button>
-        </a>
+        <ResumeLink modificator={"resume_link--btn--nav"} />
       </div>
     </nav>
   )

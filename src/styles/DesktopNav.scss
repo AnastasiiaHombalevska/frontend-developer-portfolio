@@ -16,6 +16,14 @@
     }
   }
 
+  & > .resume_link--btn--nav {
+    display: none;
+
+    @include onMD {
+      display: block;
+    }
+  }
+
   &--logo {
     padding-block: 24px;
 
@@ -60,23 +68,5 @@
     position: relative;
 
     @include forHoverLinks;
-  }
-
-  &--btn {
-    display: none;
-
-    @include onMD {
-      display: block;
-      @include forBtn;
-      width: 183px;
-      padding: 20px 52px 20px 32px;
-
-      &::after {
-        right: calc(19% - 6px);
-      }
-
-      @include hover(border, 1px solid $secondTextColor);
-      @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-    }
   }
 }
