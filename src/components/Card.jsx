@@ -1,14 +1,14 @@
 import React from "react";
 
 export default function Card({ data }) {
-  const { number, name, imgSourse, description, skills, links, key } = data;
+  const { number, name, imgSourse, description, skills, links } = data;
 
   return (
-    <div className={`card card--${number}`} id={key}>
+    <div className={`card card--${number}`}>
       <img
-          src={imgSourse}
-          alt={description}
-          className="card--image"
+        src={imgSourse}
+        alt={description}
+        className="card--image"
       />
 
       <h3 className="card--title">{name}</h3>

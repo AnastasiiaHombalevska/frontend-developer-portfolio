@@ -45,7 +45,9 @@ export default function Portfolio() {
       </div>
 
       <div className="portfolio--card-container">
-        {filteredCards && filteredCards.map((cardData, index) => <Card data={cardData} key={index} />)}
+        {filteredCards &&
+          filteredCards.map((cardData, index) => <Card data={cardData} key={index} />)
+        }
       </div>
   </section>
   )

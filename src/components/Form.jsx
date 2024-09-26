@@ -61,9 +61,11 @@ export default function Form() {
           >
           </textarea>
 
-      <button type="submit" className="form--btn">Send message</button>
+      <button className="form--btn">Send message</button>
       
-      {messageState !== null && <FormMessage state={messageState} userName={userName} />}
+      {messageState !== null &&
+        <FormMessage state={messageState} userName={userName} />
+      }
     </form>
   )
 }
