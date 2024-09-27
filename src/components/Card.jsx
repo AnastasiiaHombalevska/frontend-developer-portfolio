@@ -4,7 +4,7 @@ export default function Card({ data }) {
   const { number, name, imgSourse, description, skills, links } = data;
 
   return (
-    <div className={`card card--${number}`}>
+    <div className={`card card--${number} carousel--card`}>
       <img
         src={imgSourse}
         alt={description}
@@ -36,6 +36,6 @@ export default function Card({ data }) {
           })}
           </div>
       </div>
-  </div>
+    </div>
   )
 }

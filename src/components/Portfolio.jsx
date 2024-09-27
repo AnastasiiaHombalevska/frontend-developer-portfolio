@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
+import cardsData from "../worksData.js";
 import Card from "./Card";
-import cardData from "../worksData.js";
+import Carousel from "./Carousel";
 
 export default function Portfolio() {
-  const [filteredCards, setFilteredCards] = useState(cardData);
+  const [filteredCards, setFilteredCards] = useState(cardsData);
 
   const filterCards = (filter) => {
-    console.log(filter);
-
     if (filter === "All") {
-      setFilteredCards(cardData);
+      setFilteredCards(cardsData);
     } else {
       setFilteredCards(
-        cardData.filter((card) => card.skills.includes(filter))
+        cardsData.filter((card) => card.skills.includes(filter))
       );
     }
   };
@@ -44,6 +43,7 @@ export default function Portfolio() {
         </div>
       </div>
 
+      <Carousel images={filteredCards} />
       <div className="portfolio--card-container">
         {filteredCards &&
           filteredCards.map((cardData, index) => <Card data={cardData} key={index} />)

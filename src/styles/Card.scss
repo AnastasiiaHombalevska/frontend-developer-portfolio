@@ -3,26 +3,22 @@
   flex-direction: column;
   gap: 18px;
   box-sizing: border-box;
+  width: 100%;
+
+  @include onSM {
+    width: 90%;
+
+    max-width: 696px;
+  }
+
+  @include onMD {
+    width: 45%;
+  }
 
   &--image {
-    width: 317px;
-    height: 205px;
+    width: 100%;
+    height: auto;
     border-radius: 16px;
-    
-    @include onSM {
-      width: 696px;
-      height: 500px;
-    }
-
-    @include onMD {
-      width: 458px;
-      height: 430px;
-    }
-
-    @include onLD {
-      width: 480px;
-      height: 430px;
-    }
   }
 
   &--title {
@@ -70,7 +66,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 205px;
+    bottom: 0;
     opacity: 0;
 
     @include hover(opacity, 1);

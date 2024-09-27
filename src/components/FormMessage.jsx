@@ -1,14 +1,15 @@
 import React from "react";
 
-function updateName(name) {
-  if (!name) {
-    return;
-  } else {
-    return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
-  }
-}
 
 export default function FormMessage({ state, userName }) {
+  function updateName(name) {
+    if (!name) {
+      return;
+    } else {
+      return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
+    }
+  }
+  
   const success = `${updateName(userName)}, your message has been successfully sent!`;
 
   const err = "Have you filled in all the fields?";
