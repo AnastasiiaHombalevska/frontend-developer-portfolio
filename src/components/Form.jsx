@@ -3,24 +3,36 @@ import FormMessage from "./FormMessage";
 
 export default function Form() {
   const [messageState, setMessageState] = useState(null);
-  const [userName, setUserName] = useState("");
+  const [formData, setFormData] = useState({
+    userName: "",
+    email: "",
+    message: ""
+  });
 
-  function sendMsg(e) {
-    const form = e.target;
+  function handleChange(e) {
+    const { name, value } = e.target;
+
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      [name]: value
+    }))
+  }
+
+  function submitForm(e) {
+    const { userName, email, message } = formData;
     e.preventDefault();
 
-    const formData = new FormData(form);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
-
-    if (!name || !email || !message) {
+    if (!userName || !email || !message) {
       setMessageState(false);
       return;
     } else {
-      form.reset();
-      setUserName(name);
       setMessageState(true);
+      setFormData({
+        userName: "",
+        email: "",
+        message: ""
+      })
+      e.target.reset();
     }
   }
 
@@ -35,35 +47,42 @@ export default function Form() {
   }, [messageState]);
 
   return (
-      <form className="contacts--form form" onSubmit={sendMsg}>
+      <form className="contacts--form form" onSubmit={submitForm}>
           <input
             type="text"
-            name="name"
+            name="userName"
+            value={formData.userName}
             className="form--field form--input"
             placeholder="Name:"
             autoComplete="off"
+            onChange={handleChange}
           />
 
           <input
             type="email"
             name="email"
+            value={formData.email}
             className="form--field form--input"
             placeholder="Email:"
             autoComplete="off"
+            onChange={handleChange}
           />
 
           <textarea
             name="message"
+            value={formData.message}
             cols="30"
             rows="10"
             className="form--field form--textarea"
             placeholder="Message:"
-          >
-          </textarea>
+            onChange={handleChange}
+          />
 
-      <button type="submit" className="form--btn">Send message</button>
-      
-      {messageState !== null && <FormMessage state={messageState} userName={userName} />}
+      <button className="form--btn">Send message</button>
+
+      {messageState !== null &&
+        <FormMessage state={messageState} userName={formData.userName} />
+      }
     </form>
   )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeLink from "./Resume";
 
 export default function Aside() {
   return (
@@ -14,9 +15,9 @@ export default function Aside() {
               <li><a href="#about" className="aside--link">About</a></li>
               <li><a href="#skills" className="aside--link">Skills</a></li>
               <li><a href="#contacts" className="aside--link">Contacts</a></li>
-          </ul>
-
-          <button className="aside--btn">Get resume</button>
+        </ul>
+        
+        <ResumeLink modificator={"resume_link--btn--asise"} />
       </div>
     </aside>
   )

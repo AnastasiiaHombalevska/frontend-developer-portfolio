@@ -1,10 +1,10 @@
 .logo {
+  width: 57px;
+  height: 57px;
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 57px;
-  height: 57px;
   @include hover(scale, 1.1);
 
   &--author {
@@ -17,64 +17,64 @@
       height: 23px;
     }
   }
-}
 
-.logo--accessibility {
-  background-image: url(../images/logos/accessibility.svg);
-}
+  &--accessibility {
+    background-image: url(../images/logos/accessibility.svg);
+  }
 
-.logo--html5 {
-  width: 50px;
-  background-image: url(../images/logos/html.svg);
-}
+  &--html5 {
+    width: 50px;
+    background-image: url(../images/logos/html.svg);
+  }
 
-.logo--css3 {
-  width: 50px;
-  background-image: url(../images/logos/css.svg);
-}
+  &--css3 {
+    width: 50px;
+    background-image: url(../images/logos/css.svg);
+  }
 
-.logo--javascript {
-  width: 50px;
-  background-image: url(../images/logos/javascript.svg);
-}
+  &--javascript {
+    width: 50px;
+    background-image: url(../images/logos/javascript.svg);
+  }
 
-.logo--sass {
-  width: 75px;
-  background-image: url(../images/logos/sass.svg);
-}
+  &--sass {
+    width: 75px;
+    background-image: url(../images/logos/sass.svg);
+  }
 
-.logo--react {
-  width: 50px;
-  background-image: url(../images/logos/react.svg);
-}
+  &--react {
+    width: 50px;
+    background-image: url(../images/logos/react.svg);
+  }
 
-.logo--typescript {
-  background-image: url(../images/logos/typescript.svg);
-}
+  &--typescript {
+    background-image: url(../images/logos/typescript.svg);
+  }
 
-.logo--vs-code {
-  width: 59px;
-  background-image: url(../images/logos/visual-studio-code.svg);
-}
+  &--vs-code {
+    width: 59px;
+    background-image: url(../images/logos/visual-studio-code.svg);
+  }
 
-.logo--node-js {
-  width: 93px;
-  background-image: url(../images/logos/nodejs.svg);
-}
+  &--node-js {
+    width: 93px;
+    background-image: url(../images/logos/nodejs.svg);
+  }
 
-.logo--github {
-  width: 59px;
-  background-image: url(../images/logos/github.svg);
-}
+  &--github {
+    width: 59px;
+    background-image: url(../images/logos/github.svg);
+  }
 
-.logo--figma {
-  background-image: url(../images/logos/figma.svg);
-}
+  &--figma {
+    background-image: url(../images/logos/figma.svg);
+  }
 
-.logo--photoshop {
-  background-image: url(../images/logos/photoshop.svg);
-}
+  &--photoshop {
+    background-image: url(../images/logos/photoshop.svg);
+  }
 
-.logo--sql {
-  background-image: url(../images/logos/sql.png);
+  &--sql {
+    background-image: url(../images/logos/sql.png);
+  }
 }

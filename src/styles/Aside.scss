@@ -25,6 +25,10 @@
     pointer-events: all;
   }
 
+  @include onMD {
+    display: none;
+  }
+
   &--container {
     margin-top: 181px;
   }
@@ -51,21 +55,5 @@
     position: relative;
 
     @include forHoverLinks;
-  }
-
-  &--btn {
-    @include forBtn;
-
-    @include hover(border, 1px solid $secondTextColor);
-    @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-    
-    &::after {
-      right: calc(25% - 6px);
-    }
-  }
-
-
-  @include onMD {
-    display: none;
   }
 }

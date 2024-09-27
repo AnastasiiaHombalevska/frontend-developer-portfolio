@@ -9,27 +9,21 @@ function updateName(name) {
 }
 
 export default function FormMessage({ state, userName }) {
-  console.log('FormMessage props:', { state, userName });
-
   const success = `${updateName(userName)}, your message has been successfully sent!`;
 
-  const err = "Are all the input data filled in?";
+  const err = "Have you filled in all the fields?";
 
   return (
-    <div className = "formMessage" >
-    {
-        state ? (
-          <>
-             <h4 className="formMessage--title">Nice!</h4>
-             <p className="formMessage--msg">{success}</p>
-          </>
-        ) : (
-          <>
-            <h4 className="formMessage--title err">Something went wrong!</h4>
-            <p className="formMessage--msg">{err}</p>
-          </>
-          )
-    }
-    </div>
+    state ? (
+      <div className="formMessage success">
+        <h4 className="formMessage--title">Well done!</h4>
+        <p className="formMessage--msg">{success}</p>
+      </div>
+    ) : (
+      <div className="formMessage err">
+        <h4 className="formMessage--title">Oops!</h4>
+        <p className="formMessage--msg">{err}</p>
+      </div>
+    )
   )
 }

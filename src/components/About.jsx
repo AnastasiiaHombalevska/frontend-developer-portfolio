@@ -12,7 +12,8 @@ export default function About() {
       
         <div className="about--bottom-container">
           <h4 className="about--sub-title">Web Developer Programmer Software Engineer.</h4>
-          <p className="about--introduction">I"m a skilled front-end developer with a psychology background, keen to enhance my tech skills. I"m well-versed in JavaScript, HTML5, CSS3, and Sass (SCSS), and I"ve gained practical experience with React, TypeScript, and Git/GitHub through academic projects. Now, I"m eager to take on real-world challenges in front-end development and leave my mark in the field. I possess a foundational grasp of object-oriented programming and familiar with software development methodologies like Agile. I"m enthusiastic about continuous learning and growth, ready to delve into any necessary areas.</p>
+          <p className="about--introduction">I'm an experienced front-end developer with a psychology background looking to improve my technical skills. I have a good knowledge of JavaScript, HTML5, CSS3, and Sass (SCSS), and have gained hands-on experience with React, TypeScript, and Git/GitHub while developing educational projects. Now I'm looking to take on real-world challenges in front-end development and make my mark in the industry. I have a fundamental knowledge of object-oriented programming and am familiar with software development methodologies such as Agile. I am enthusiastic about continuous learning and development, and I am ready to delve into any necessary areas.
+Translated with DeepL.com (free version)</p>
         </div>
         </div>
     </section>

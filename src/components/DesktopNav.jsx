@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeLink from "./Resume";
 
 export default function DesktopNav() {
   return (
@@ -13,7 +14,7 @@ export default function DesktopNav() {
             <li><a href="#contacts" className="nav--link">Contacts</a></li>
         </ul>
 
-        <button className="nav--btn">Get resume</button>
+        <ResumeLink modificator={"resume_link--btn--nav"} />
       </div>
     </nav>
   )
