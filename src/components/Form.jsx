@@ -10,12 +10,11 @@ export default function Form() {
   });
 
   function handleChange(e) {
-    // const { name, value } = e.target;
-
+    const { name, value } = e.target;
 
     setFormData(prevFormData => ({
       ...prevFormData,
-      [e.target.name]: e.target.value
+      [name]: value
     }))
   }
 
@@ -52,6 +51,7 @@ export default function Form() {
           <input
             type="text"
             name="userName"
+            value={formData.userName}
             className="form--field form--input"
             placeholder="Name:"
             autoComplete="off"
@@ -61,6 +61,7 @@ export default function Form() {
           <input
             type="email"
             name="email"
+            value={formData.email}
             className="form--field form--input"
             placeholder="Email:"
             autoComplete="off"
@@ -69,13 +70,13 @@ export default function Form() {
 
           <textarea
             name="message"
+            value={formData.message}
             cols="30"
             rows="10"
             className="form--field form--textarea"
             placeholder="Message:"
             onChange={handleChange}
-          >
-          </textarea>
+          />
 
       <button className="form--btn">Send message</button>
 
