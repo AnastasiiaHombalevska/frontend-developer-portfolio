@@ -19,7 +19,9 @@ export default function Carousel({ images }) {
   return (
     <div className="carousel">
       <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">&lt;</button>
+
       <Card data={images[activeIndex]} />
+
       <button onClick={nextSlide} className="carousel__btn carousel__btn--next">&gt;</button>
     </div>
   )
