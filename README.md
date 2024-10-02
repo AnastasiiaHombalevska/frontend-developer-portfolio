@@ -4,7 +4,6 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -12,16 +11,8 @@
 ## Overview
 
 ### The challenge
-
-Users should be able to:
-
-After entering a number (integer or decimal):
-- pressing the “convert” button will calculate and display its equivalent in another measurement unit
-- pressing “enter” will also calculate and display the result
-
-### Screenshot
-
-![screenshot](screenshot.png)
+- forms
+- carousel
 
 ### Links
 
@@ -34,5 +25,5 @@ After entering a number (integer or decimal):
 - Semantic HTML5 markup
 - SCSS custom properties, Flexbox Layout, @for loop
 - Mobile-first workflow
-- React components
-
+- React components, useState, useEffect
+- React form, carousel
