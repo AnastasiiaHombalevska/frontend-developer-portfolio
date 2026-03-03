@@ -1,6 +1,6 @@
 import React from "react";
 
-const RESUME_PATH = "https://drive.google.com/file/d/1aL6J1axG3X0mkCk6CVk6pD2s7dMKa-mq/view?usp=sharing";
+const RESUME_PATH = "../resume.pdf";
 
 export default function ResumeLink(props) {
   const { modificator } = props;
