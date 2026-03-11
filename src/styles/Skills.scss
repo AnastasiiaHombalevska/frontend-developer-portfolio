@@ -1,34 +1,32 @@
 .skills {
   @include paddingInline;
-
   margin-block: 80px;
 
-  &--section {
+  &__section {
     @include forSectionIntro;
   }
 
-  &--insp {
+  &__insp {
     opacity: 0.4;
     text-transform: none;
   }
 
-  &--title {
+  &__title {
     @include forTitles;
   }
 
-  &--sub-title {
+  &__sub-title {
     font-size: 23px;
     font-weight: 400;
     color: $secondTextColor;
     margin-bottom: 24px;
   }
 
-  &--list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px 17px;
-
     margin-bottom: 80px;
 
     @include onMD {
