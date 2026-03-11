@@ -1,13 +1,14 @@
-# Node modules
-node_modules/
-
 # Build outputs
 dist/
 build/
+
+# Node modules
+node_modules/
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Personal files
+# Personal files / PDFs
 public/*.pdf
+public/vite.svg
