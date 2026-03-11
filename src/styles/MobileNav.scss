@@ -1,9 +1,9 @@
-.mobile--nav {
+.mobile-nav {
   background-color: $secondBackgroundColor;
   padding-inline: 16px;
   box-sizing: border-box;
 
-  &--list {
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,27 +4,27 @@
   margin-block: 80px;
   box-sizing: border-box;
 
-  &--container {
+  &__container {
     @include onMD {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  &--section {
+  &__section {
     @include forSectionIntro;
   }
 
-  &--insp {
+  &__profession {
     opacity: 0.4;
     text-transform: none;
   }
 
-  &--title {
+  &__title {
     @include forTitles;
   }
 
-  &--sub-title {
+  &__sub-title {
     @include forHeaders;
     color: $secondTextColor;
 
@@ -33,7 +33,7 @@
     }
   }
 
-  &--introduction {
+  &__introduction {
     @include forText;
 
     @include onSM {
@@ -41,7 +41,7 @@
     }
   }
 
-  &--bottom-container {
+  &__bottom-container {
     @include onMD {
       width: 800px;
     }

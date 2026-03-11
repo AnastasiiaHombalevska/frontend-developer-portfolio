@@ -1,5 +1,5 @@
 .nav {
-  &--container {
+  &__container {
     @include paddingInline;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     }
   }
 
-  & > .resume_link--btn--nav {
+  &__resume-btn {
     display: none;
 
     @include onMD {
@@ -24,7 +24,7 @@
     }
   }
 
-  &--logo {
+  &__logo {
     padding-block: 24px;
 
     @include onSM {
@@ -35,7 +35,6 @@
     @include onSM {
       width: 255px;
       height: 23px;
-
       padding-block: 25px;
     }
 
@@ -44,7 +43,7 @@
     }
   }
 
-  &--list {
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,8 +61,8 @@
       gap: 57px;
     }
   }
-
-  &--link {
+  
+  &__link {
     color: $mainTextColor;
     position: relative;
 

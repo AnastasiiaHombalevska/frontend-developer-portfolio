@@ -3,10 +3,8 @@
   max-width: 700px;
   display: flex;
   flex-direction: column;
-
   margin-top: 24px;
   gap: 16px;
-
   position: relative;
 
   @include onMD {
@@ -14,7 +12,7 @@
     max-width: 550px;
   }
 
-  &--field {
+  &__field {
     color: #acacad;
     font-family: inherit;
     background-color: $mainBackgroundColor;
@@ -23,7 +21,7 @@
     padding: 16px;
     box-sizing: border-box;
     outline: none;
-  
+
     &:hover {
       border: 1px solid $secondTextColor;
       cursor: pointer;
@@ -34,8 +32,8 @@
       font-family: inherit;
     }
   }
-
-  &--textarea {
+  
+  &__textarea {
     resize: none;
     overflow: auto;
 
@@ -45,12 +43,11 @@
     }
   }
 
-  &--btn {
+  &__btn {
     @include forBtn;
-  
     @include hover(border, 1px solid $secondTextColor);
     @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-    
+
     &::after {
       right: calc(31% - 6px);
     }

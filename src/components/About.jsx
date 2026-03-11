@@ -1,21 +1,46 @@
-import React from "react";
+import React from 'react';
 
 export default function About() {
   return (
     <section className="about" id="about">
-        <h2 className="about--section">Info <span className="about--insp">Developer</span></h2>
-        
-      <div className="about--container">
+      <div>
+        <h3 className="about__section">
+          Info <span className="about__profession">Developer</span>
+        </h3>
+      </div>
+
+      <div className="about__container">
         <div>
-          <h3 className="about--title">About Me</h3>
+          <h2 className="about__title">About Me</h2>
         </div>
-      
-        <div className="about--bottom-container">
-          <h4 className="about--sub-title">Web Developer Programmer Software Engineer.</h4>
-          <p className="about--introduction">I'm an experienced front-end developer with a psychology background looking to improve my technical skills. I have a good knowledge of JavaScript, HTML5, CSS3, and Sass (SCSS), and have gained hands-on experience with React, TypeScript, and Git/GitHub while developing educational projects. Now I'm looking to take on real-world challenges in front-end development and make my mark in the industry. I have a fundamental knowledge of object-oriented programming and am familiar with software development methodologies such as Agile. I am enthusiastic about continuous learning and development, and I am ready to delve into any necessary areas.
-Translated with DeepL.com (free version)</p>
+
+        <div className="about__bottom-container">
+          <h4 className="about__sub-title">
+            Web Developer Programmer Software Engineer.
+          </h4>
+          <p className="about__introduction">
+            I'm an experienced front-end developer with a psychology background,
+            currently expanding my expertise by working with a wider range of
+            technologies, including PHP and jQuery. Over the past year, I have
+            been solving real-world tasks such as creating responsive designs,
+            building interactive blocks with modals, optimizing pages, fixing
+            design inconsistencies, performing code reviews, and assisting team
+            members with onboarding and task execution. I have strong knowledge
+            of{' '}
+            <strong>
+              JavaScript, HTML5, CSS3, PHP, jQuery, and Magento 1 and Bitbucket
+            </strong>
+            through work on commercial projects, as well as s
+            <strong>Sass (SCSS), React, TypeScript, and Git/GitHub</strong> in
+            pet projects.
+            <br />I am familiar with object-oriented programming principles and
+            software development methodologies like Agile. I am enthusiastic
+            about continuous learning and professional growth and ready to take
+            on challenging front-end projects, implementing scalable,
+            maintainable, and user-friendly solutions.
+          </p>
         </div>
-        </div>
+      </div>
     </section>
-  )
+  );
 }

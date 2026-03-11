@@ -7,8 +7,7 @@
 
   @include paddingInline;
   padding-block: 40px;
-
-  box-sizing: border-box; 
+  box-sizing: border-box;
 
   @include onMD {
     flex-direction: row;
@@ -18,7 +17,7 @@
     padding-block: 0;
   }
 
-  &--container {
+  &__container {
     max-width: 700px;
 
     @include onMD {
@@ -27,20 +26,30 @@
     }
   }
 
-  &--title {
+  &__title {
     @include forTitles;
   }
 
-  &--socials {
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $mainTextColor;
+    margin-top: 8px;
+  }
+
+  &__small-text {
+    font-size: 12px;
+  }
+
+  &__socials {
     display: flex;
     flex-direction: row;
     justify-content: start;
     padding-top: 24px;
   }
 
-  &--list-item {
+  &__social-item {
     display: flex;
-    flex-direction: start;
     align-items: center;
     gap: 10px;
     position: relative;
@@ -51,24 +60,23 @@
     }
 
     &:first-of-type::after {
-      content: "";
+      content: '';
       width: 4px;
       height: 4px;
       background-color: $mainTextColor;
       display: block;
       top: calc(50% - 2px);
       right: 38px;
-
       position: absolute;
     }
   }
 
-  &--img {
+  &__social-img {
     width: 24px;
     height: 24px;
   }
 
-  &--link {
+  &__social-link {
     display: inline-block;
     text-transform: uppercase;
     color: $mainTextColor;
@@ -77,4 +85,3 @@
     @include forHoverLinks;
   }
 }
-

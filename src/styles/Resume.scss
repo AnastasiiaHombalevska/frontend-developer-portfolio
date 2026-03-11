@@ -1,10 +1,10 @@
 .resume_link--btn {
     @include forBtn;
     width: 183px;
-    padding: 20px 52px 20px 32px;
+    padding: 15px 40px 15px 21px;
 
     &::after {
-      right: calc(19% - 6px);
+      right: calc(15% - 6px);
     }
 
     @include hover(border, 1px solid $secondTextColor);

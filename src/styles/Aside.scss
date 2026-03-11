@@ -29,11 +29,11 @@
     display: none;
   }
 
-  &--container {
+  &__container {
     margin-top: 181px;
   }
 
-  &--nav-list {
+  &__nav-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@
     padding: 14px 0;
   }
 
-  &--list {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -50,7 +50,7 @@
     padding-bottom: 60px;
   }
 
-  &--link {
+  &__link {
     color: $mainTextColor;
     position: relative;
 

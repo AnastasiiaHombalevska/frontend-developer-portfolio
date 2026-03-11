@@ -47,42 +47,43 @@ export default function Form() {
   }, [messageState]);
 
   return (
-      <form className="contacts--form form" onSubmit={submitForm}>
-          <input
-            type="text"
-            name="userName"
-            value={formData.userName}
-            className="form--field form--input"
-            placeholder="Name:"
-            autoComplete="off"
-            onChange={handleChange}
-          />
-
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            className="form--field form--input"
-            placeholder="Email:"
-            autoComplete="off"
-            onChange={handleChange}
-          />
-
-          <textarea
-            name="message"
-            value={formData.message}
-            cols="30"
-            rows="10"
-            className="form--field form--textarea"
-            placeholder="Message:"
-            onChange={handleChange}
-          />
-
-      <button className="form--btn">Send message</button>
-
-      {messageState !== null &&
+    <form className="contacts__form form" onSubmit={submitForm}>
+      <input
+        type="text"
+        name="userName"
+        value={formData.userName}
+        className="form__field form__input"
+        placeholder="Name:"
+        autoComplete="off"
+        onChange={handleChange}
+      />
+  
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        className="form__field form__input"
+        placeholder="Email:"
+        autoComplete="off"
+        onChange={handleChange}
+      />
+  
+      <textarea
+        name="message"
+        value={formData.message}
+        cols="30"
+        rows="10"
+        className="form__field form__textarea"
+        placeholder="Message:"
+        onChange={handleChange}
+      />
+  
+      <button className="form__btn">Send message</button>
+  
+      {messageState !== null && (
         <FormMessage state={messageState} userName={formData.userName} />
-      }
+      )}
     </form>
-  )
+  );
+  
 }

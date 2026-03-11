@@ -1,26 +1,27 @@
-.skill--item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $secondBackgroundColor;
-  width: 163px;
-  flex-shrink: 0;
-  gap: 16px;
-  border-radius: 16px;
-  padding: 16px;
-  box-sizing: border-box;
+.skill {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondBackgroundColor;
+    width: 163px;
+    flex-shrink: 0;
+    gap: 16px;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
 
-  @include onSM {
-    width: 221px;
-    padding: 24px;
-    font-size: 23px;
-  }
+    @include onSM {
+      width: 221px;
+      padding: 24px;
+      font-size: 23px;
+    }
 
-  @include onMD {
-    width: 310px;
-    flex-direction: row;
-    justify-content: start;
-
+    @include onMD {
+      width: 310px;
+      flex-direction: row;
+      justify-content: start;
+    }
   }
 }
