@@ -19,7 +19,7 @@ export default function Header() {
 
           <p className="header__greeting">
             I love creating the magic of turning signs and symbols into
-            beautiful and functional web pages✨
+            beautiful and functional web pages
           </p>
         </div>
 
