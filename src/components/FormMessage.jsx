@@ -2,13 +2,10 @@ import React from 'react';
 
 export default function FormMessage({ state, userName }) {
   function updateName(name) {
-    const userName =
-      name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
-
     if (!name) {
       return;
     } else {
-      return userName;
+      return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
     }
   }
 
