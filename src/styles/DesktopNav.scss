@@ -1,4 +1,10 @@
 .nav {
+  display: none;
+
+  @include onMD {
+    display: block;
+  }
+
   &__container {
     @include paddingInline;
     display: flex;

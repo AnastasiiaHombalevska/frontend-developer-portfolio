@@ -17,7 +17,7 @@ export default function Aside() {
           <li><a href="#contacts" className="aside__link">Contacts</a></li>
         </ul>
         
-        <ResumeLink modificator={"resume_link-btn--asise"} />
+        {/* <ResumeLink modificator={"resume_link-btn--asise"} /> */}
       </div>
     </aside>
   )

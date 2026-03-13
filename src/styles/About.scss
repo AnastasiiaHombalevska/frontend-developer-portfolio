@@ -43,6 +43,10 @@
 
   &__bottom-container {
     @include onMD {
+      width: 750px;
+    }
+
+    @include onLD {
       width: 800px;
     }
   }

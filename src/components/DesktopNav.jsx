@@ -30,7 +30,7 @@ export default function DesktopNav() {
           </li>
         </ul>
 
-        <ResumeLink modificator="nav__resume-btn" />
+        {/* <ResumeLink modificator="nav__resume-btn" /> */}
       </div>
     </nav>
   );
