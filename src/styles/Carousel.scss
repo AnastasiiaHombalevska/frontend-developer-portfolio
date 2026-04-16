@@ -6,6 +6,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-block: 60px;
   position: relative;
 
   @include onMD {
@@ -13,20 +14,22 @@
   }
 
   &__btn {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     color: $mainTextColor;
     font-size: 1.5rem;
     border: none;
     padding: 1rem;
     cursor: pointer;
     z-index: 1;
-    transition: background-color 0.3s;
-    
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $secondTextColor;
+      background-color: transparent;
     }
   }
 

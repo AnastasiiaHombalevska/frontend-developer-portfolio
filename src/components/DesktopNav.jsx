@@ -10,7 +10,7 @@ export default function DesktopNav() {
         <ul className="nav__list">
           <li className="nav__item">
             <a href="#portfolio" className="nav__link">
-              Work
+              Works
             </a>
           </li>
           <li className="nav__item">

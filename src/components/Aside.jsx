@@ -11,7 +11,7 @@ export default function Aside() {
 
       <div className="aside__container">
         <ul className="aside__list">
-          <li><a href="#portfolio" className="aside__link">Work</a></li>
+          <li><a href="#portfolio" className="aside__link">Works</a></li>
           <li><a href="#about" className="aside__link">About</a></li>
           <li><a href="#skills" className="aside__link">Skills</a></li>
           <li><a href="#contacts" className="aside__link">Contacts</a></li>

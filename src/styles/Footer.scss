@@ -1,5 +1,5 @@
-@use "./utils/mixins" as *;
-@use "./utils/variables" as *;
+@use './utils/mixins' as *;
+@use './utils/variables' as *;
 
 .footer {
   background-color: $secondBackgroundColor;
@@ -10,9 +10,14 @@
     display: block;
   }
 
-  & .nav__container,
   & .nav__list {
     flex-direction: row;
+  }
+
+  @include onSM {
+    & .nav__container {
+      flex-direction: row;
+    }
   }
 
   &__link {

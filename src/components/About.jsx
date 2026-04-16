@@ -19,25 +19,15 @@ export default function About() {
             Web Developer Programmer Software Engineer.
           </h4>
           <p className="about__introduction">
-            I'm an experienced front-end developer with a psychology background,
-            currently expanding my expertise by working with a wider range of
-            technologies, including PHP and jQuery. Over the past year, I have
-            been solving real-world tasks such as creating responsive designs,
-            building interactive blocks with modals, optimizing pages, fixing
-            design inconsistencies, performing code reviews, and assisting team
-            members with onboarding and task execution. I have strong knowledge
-            of{' '}
-            <strong>
-              JavaScript, HTML5, CSS3, PHP, jQuery, and Magento 1 and Bitbucket
-            </strong>
-            through work on commercial projects, as well as s
-            <strong>Sass (SCSS), React, TypeScript, and Git/GitHub</strong> in
-            pet projects.
-            <br />I am familiar with object-oriented programming principles and
-            software development methodologies like Agile. I am enthusiastic
-            about continuous learning and professional growth and ready to take
-            on challenging front-end projects, implementing scalable,
-            maintainable, and user-friendly solutions.
+            I'm a front-end developer with a background in psychology, eager to
+            advance my technical expertise. I have strong skills in <strong>JavaScript,
+            HTML5, and CSS3,</strong> and hands-on experience with <strong>React, TypeScript, and
+            Git/GitHub</strong> through practical projects. I have a solid understanding
+            of object-oriented programming and am familiar with software
+            development practices, including Agile methodology. Enthusiastic
+            about continuous learning, I am ready to explore new technologies
+            and confidently contribute to a team, bringing both value and a
+            commitment to growing my skills as a front-end developer.
           </p>
         </div>
       </div>

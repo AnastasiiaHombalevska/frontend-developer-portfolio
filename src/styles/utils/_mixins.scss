@@ -8,7 +8,7 @@
 }
 
 @mixin onSM {
-  @media (min-width: 740px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
@@ -21,6 +21,12 @@
 
 @mixin onLD {
   @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin onLD {
+  @media (min-width: 1536px) {
     @content;
   }
 }

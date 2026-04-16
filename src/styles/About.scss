@@ -4,7 +4,6 @@
 .about {
   @include paddingInline;
 
-  // margin-block: 80px;
   box-sizing: border-box;
 
   &__container {
@@ -30,6 +29,7 @@
   &__sub-title {
     @include forHeaders;
     color: $secondTextColor;
+    padding-bottom: 16px;
 
     @include onSM {
       font-size: 28px;
@@ -45,6 +45,8 @@
   }
 
   &__bottom-container {
+    margin-block: 60px;
+
     @include onMD {
       width: 750px;
     }

@@ -29,8 +29,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px 17px;
+    gap: 12px;
     margin-bottom: 40px;
+
+    @include onSM {
+      margin-block: 60px;
+    }
 
     @include onMD {
       gap: 40px 44px;
