@@ -6,6 +6,15 @@
   border-top: 1px solid rgba($mainTextColor, 0.3);
   padding-bottom: 20px;
 
+  & .nav {
+    display: block;
+  }
+
+  & .nav__container,
+  & .nav__list {
+    flex-direction: row;
+  }
+
   &__link {
     color: $mainTextColor;
     text-align: center;

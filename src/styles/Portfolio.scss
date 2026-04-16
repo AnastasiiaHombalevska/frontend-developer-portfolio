@@ -3,7 +3,7 @@
 
 .portfolio {
   @include paddingInline;
-  margin-block: 80px;
+  margin-block: 40px;
 
   @include onMD {
     margin-block: 120px;

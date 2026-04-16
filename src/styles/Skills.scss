@@ -3,7 +3,7 @@
 
 .skills {
   @include paddingInline;
-  margin-block: 80px;
+  margin-block: 40px;
 
   &__section {
     @include forSectionIntro;
@@ -30,7 +30,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px 17px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     @include onMD {
       gap: 40px 44px;
