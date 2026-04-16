@@ -94,4 +94,72 @@ export default [
     ],
     date: '04.2026'
   },
+
+  {
+    name: 'Front-end developer portfolio',
+    description: 'Front-end developer portfolio with React (this one lol)',
+    skills: ['JavaScript', 'React'],
+    links: [
+      {
+        'View live':
+          'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
+      },
+      {
+        'View github':
+          'https://anastasiiahombalevska.github.io/frontend-developer-portfolio/',
+      },
+    ],
+    date: '2024'
+  },
+
+  {
+    name: 'Random joke generator',
+    description: 'Random joke generator',
+    skills: ['JavaScript'],
+    links: [
+      {
+        'View live':
+          'https://jokeschall.netlify.app/',
+      },
+      {
+        'View github':
+          'https://github.com/AnastasiiaHombalevska/joke_chall',
+      },
+    ],
+    date: '2025'
+  },
+
+  {
+    name: 'Wave form animation',
+    description: 'Wave form animation',
+    skills: ['JavaScript'],
+    links: [
+      {
+        'View live':
+          'https://formwaveanim.netlify.app/',
+      },
+      {
+        'View github':
+          'https://github.com/AnastasiiaHombalevska/wave_animation',
+      },
+    ],
+    date: '2025'
+  },
+
+  {
+    name: 'Hidden search widget',
+    description: 'Hidden search widget',
+    skills: ['JavaScript'],
+    links: [
+      {
+        'View live':
+          'https://searchwidgetcss.netlify.app/',
+      },
+      {
+        'View github':
+          'https://github.com/AnastasiiaHombalevska/hidden_search_widget',
+      },
+    ],
+    date: '2025'
+  },
 ];

@@ -72,8 +72,8 @@
     margin: 40px;
 
     @include onMD {
-      max-width: 429px;
-      height: 559px;
+      width: 400px;
+      height: 350px;
       margin-block: 120px;
     }
   }

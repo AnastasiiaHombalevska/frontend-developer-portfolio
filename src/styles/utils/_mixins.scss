@@ -58,10 +58,10 @@
 }
 
 @mixin paddingInline {
-  padding-inline: 16px;
+  padding-inline: 24px;
 
   @include onSM {
-    padding-inline: 24px;
+    padding-inline: 32px;
   }
 
   @include onLD {
