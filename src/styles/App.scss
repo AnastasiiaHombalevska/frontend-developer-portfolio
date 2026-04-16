@@ -30,7 +30,7 @@ html {
 
 body {
   background-color: $mainBackgroundColor;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &:has(.aside:target) {
     overflow: hidden;

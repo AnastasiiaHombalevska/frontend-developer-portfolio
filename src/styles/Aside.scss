@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $secondBackgroundColor;
   padding-inline: 16px;
 
   opacity: 0;
@@ -23,8 +22,10 @@
 
   &:target {
     opacity: 1;
+    background-color: $secondBackgroundColor;
     transform: translateX(0);
     pointer-events: all;
+    z-index: 10;
   }
 
   @include onMD {
@@ -32,7 +33,10 @@
   }
 
   &__container {
-    margin-top: 181px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__nav-list {
