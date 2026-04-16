@@ -1,3 +1,6 @@
+@use "./utils/mixins" as *;
+@use "./utils/variables" as *;
+
 .form {
   width: 100%;
   max-width: 700px;

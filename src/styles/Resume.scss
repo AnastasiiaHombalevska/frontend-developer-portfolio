@@ -1,3 +1,6 @@
+@use "./utils/mixins" as *;
+@use "./utils/variables" as *;
+
 .resume_link--btn {
     @include forBtn;
     width: 183px;

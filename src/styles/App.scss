@@ -1,22 +1,23 @@
-@import "utils";
+@use "../styles/utils/variables" as *;
+@use './utils/reset';
 
-@import "./Header.scss";
-@import "./MobileNav.scss";
-@import "./Resume.scss";
-@import "./Aside.scss";
-@import "./DesktopNav.scss";
-@import "./icons.scss";
-@import "./logos.scss";
-@import "./Carousel.scss";
-@import "./Portfolio.scss";
-@import "./Card.scss";
-@import "./About.scss";
-@import "./Skills.scss";
-@import "./Skill.scss";
-@import "./Contacts.scss";
-@import "./Form.scss";
-@import "./FormMessage.scss";
-@import "./Footer.scss";
+@use "./Header.scss";
+@use "./MobileNav.scss";
+@use "./Resume.scss";
+@use "./Aside.scss";
+@use "./DesktopNav.scss";
+@use "./icons.scss";
+@use "./logos.scss";
+@use "./Carousel.scss";
+@use "./Portfolio.scss";
+@use "./Card.scss";
+@use "./About.scss";
+@use "./Skills.scss";
+@use "./Skill.scss";
+@use "./Contacts.scss";
+@use "./Form.scss";
+@use "./FormMessage.scss";
+@use "./Footer.scss";
 
 html {
   scroll-behavior: smooth;
@@ -24,10 +25,12 @@ html {
   font-size: $myFontSize;
   font-weight: 400;
   color: $mainTextColor;
+  overflow-x: hidden;
 }
 
 body {
   background-color: $mainBackgroundColor;
+  overflow-x: hidden;
 
   &:has(.aside:target) {
     overflow: hidden;

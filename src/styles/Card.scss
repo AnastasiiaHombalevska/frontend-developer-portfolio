@@ -1,3 +1,6 @@
+@use "./utils/mixins" as *;
+@use "./utils/variables" as *;
+
 .card {
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@
   &__skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px; // невеликий відступ між елементами
+    gap: 4px;
   }
 
   &__skills-item {

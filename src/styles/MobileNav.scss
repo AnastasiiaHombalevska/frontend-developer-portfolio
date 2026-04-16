@@ -1,3 +1,6 @@
+@use "./utils/mixins" as *;
+@use "./utils/variables" as *;
+
 .mobile-nav {
   background-color: $secondBackgroundColor;
   padding-inline: 16px;
