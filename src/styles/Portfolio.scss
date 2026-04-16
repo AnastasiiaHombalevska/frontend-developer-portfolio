@@ -53,6 +53,7 @@
     color: $mainTextColor;
     font-family: inherit;
     background-color: inherit;
+    text-transform: capitalize;
 
     @include hover(color, $secondTextColor);
   }

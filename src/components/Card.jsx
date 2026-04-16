@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function Card({ data }) {
+  if (!data) return null;
+  
   const { number, name, imgSourse, description, skills, links } = data;
 
   return (
@@ -14,6 +16,7 @@ export default function Card({ data }) {
           {links &&
             links.map((item) => {
               const [key, value] = Object.entries(item)[0];
+
               return (
                 <a
                   href={value}

@@ -1,32 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import cardsData from '../worksData.js';
 import Card from './Card';
 import Carousel from './Carousel';
 
 export default function Portfolio() {
+  const [activeFilter, setActiveFilter] = useState('All');
   const [filteredCards, setFilteredCards] = useState(cardsData);
 
-  const filterCards = (filter) => {
-    if (filter === 'All') {
-      setFilteredCards(cardsData);
-    } else {
-      setFilteredCards(
-        cardsData.filter((card) => card.skills.includes(filter))
-      );
-    }
-  };
+  const skillMap = ['javascript', 'react', 'typescript', 'redux', 'node'];
 
   useEffect(() => {
-    const filterBtns = document.querySelectorAll('.portfolio__btn');
+    if (activeFilter === 'All') {
+      setFilteredCards(cardsData);
+      return;
+    }
 
-    filterBtns.forEach((btn) => {
-      btn.addEventListener('click', (ev) => {
-        const filter = ev.target.innerText;
+    const normalized = activeFilter.toLowerCase();
 
-        filterCards(filter);
-      });
-    });
-  }, []);
+    const result = cardsData.filter((card) =>
+      card.skills.some((skill) => skill.toLowerCase().includes(normalized))
+    );
+
+    setFilteredCards(result);
+  }, [activeFilter]);
 
   return (
     <section className="portfolio" id="portfolio">
@@ -37,36 +33,44 @@ export default function Portfolio() {
 
       <div className="portfolio__filter-container">
         <h3 className="portfolio__title">Featured work</h3>
+
         <div className="portfolio__btns-container">
-          <button type="button" className="portfolio__btn">
-            All
-          </button>
-          <button type="button" className="portfolio__btn portfolio__btn--html">
-            HTML
-          </button>
-          <button type="button" className="portfolio__btn portfolio__btn--css">
-            CSS
-          </button>
           <button
             type="button"
-            className="portfolio__btn portfolio__btn--javascript"
+            className="portfolio__btn"
+            onClick={() => setActiveFilter('All')}
           >
-            JavaScript
+            All
           </button>
-          <button className="portfolio__btn portfolio__btn--scss">
-            SASS(SCSS)
-          </button>
+
+          {skillMap.map((skill) => (
+            <button
+              type="button"
+              className={`portfolio__btn portfolio__btn--${skill}`}
+              key={skill}
+              onClick={() => setActiveFilter(skill)}
+            >
+              {skill}
+            </button>
+          ))}
         </div>
       </div>
 
-      <Carousel images={filteredCards} />
-
+      {filteredCards.length > 0 && (<Carousel images={filteredCards} />)}
+      
       <div className="portfolio__card-container">
-        {filteredCards &&
+        {filteredCards.length > 0 &&
           filteredCards.map((cardData, index) => (
             <Card data={cardData} key={index} />
-          ))}
+          ))
+        }
       </div>
+
+      {filteredCards.length === 0 && (
+        <p className="portfolio__empty">
+          No projects found for "{activeFilter}" for now...
+        </p>
+      )}
     </section>
   );
 }
