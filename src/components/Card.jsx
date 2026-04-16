@@ -3,16 +3,16 @@ import React from 'react';
 export default function Card({ data }) {
   if (!data) return null;
   
-  const { number, name, imgSourse, description, skills, links } = data;
+  const { name, imgSourse, description, skills, links } = data;
 
   return (
     <div className="card">
       <div
-        className={`card__image-container card__image-container--${number} carousel__card`}
+        className={`card__image-container card__image-container carousel__card`}
       >
         <img src={imgSourse} alt={description} className="card__image" />
 
-        <div className={`card__overlay card__overlay--${number}`}>
+        <div className='card__overlay card__overlay'>
           {links &&
             links.map((item) => {
               const [key, value] = Object.entries(item)[0];

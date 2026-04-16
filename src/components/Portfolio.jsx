@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [filteredCards, setFilteredCards] = useState(cardsData);
 
-  const skillMap = ['javascript', 'react', 'typescript', 'redux', 'node'];
+  const skillMap = ['JavaScript', 'React', 'TypeScript', 'Redux', 'Node'];
 
   useEffect(() => {
     if (activeFilter === 'All') {
@@ -35,35 +35,34 @@ export default function Portfolio() {
         <h3 className="portfolio__title">Featured work</h3>
 
         <div className="portfolio__btns-container">
-          <button
-            type="button"
-            className="portfolio__btn"
-            onClick={() => setActiveFilter('All')}
-          >
-            All
-          </button>
+          <label htmlFor="skill-select">Choose skill:</label>
 
-          {skillMap.map((skill) => (
-            <button
-              type="button"
-              className={`portfolio__btn portfolio__btn--${skill}`}
-              key={skill}
-              onClick={() => setActiveFilter(skill)}
-            >
-              {skill}
-            </button>
-          ))}
+          <select
+            name="skills"
+            id="skill-select"
+            className="portfolio__select"
+            onChange={(e) => setActiveFilter(e.target.value)}
+          >
+            <option value="All" className="portfolio__btn">
+              All
+            </option>
+
+            {skillMap.map((skill) => (
+                <option value={skill} key={skill} className="portfolio__btn">
+                  {skill}
+                </option>
+              ))}
+          </select>
         </div>
       </div>
 
-      {filteredCards.length > 0 && (<Carousel images={filteredCards} />)}
-      
+      {filteredCards.length > 0 && <Carousel images={filteredCards} />}
+
       <div className="portfolio__card-container">
         {filteredCards.length > 0 &&
           filteredCards.map((cardData, index) => (
             <Card data={cardData} key={index} />
-          ))
-        }
+          ))}
       </div>
 
       {filteredCards.length === 0 && (

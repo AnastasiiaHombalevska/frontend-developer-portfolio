@@ -7,7 +7,6 @@ import scrMuseum2 from './images/portfolio-screenshots/museum2-0.png';
 
 export default [
   {
-    number: 1,
     name: 'Unit Conversion',
     imgSourse: scrUnitConversion,
     description: 'screenshoot of metric/Imperial Unit Conversion',
@@ -22,7 +21,6 @@ export default [
   },
 
   {
-    number: 2,
     name: 'Random password generator',
     imgSourse: scrPasswordGenerator,
     description: 'screenshoot of random password generator',
@@ -37,7 +35,6 @@ export default [
   },
 
   {
-    number: 3,
     name: 'CV 2D-game with JavaScript',
     imgSourse: scr2DGame,
     description: 'screenshoot of CV 2D-game with JavaScript',
@@ -55,7 +52,6 @@ export default [
   },
 
   {
-    number: 4,
     name: 'Museum 2.0',
     imgSourse: scrMuseum2,
     description: 'landing page screenshoot of museum 2.0',
@@ -69,7 +65,6 @@ export default [
   },
 
   {
-    number: 5,
     name: 'Creative Bakery',
     imgSourse: scrCreativeBakery,
     description: 'landing page screenshoot of Creative Bakery',
@@ -86,7 +81,6 @@ export default [
   },
 
   {
-    number: 6,
     name: 'Museum',
     imgSourse: scrMuseum,
     description: 'landing page screenshoot of museum',
@@ -98,7 +92,6 @@ export default [
   },
 
   {
-    number: 7,
     name: 'Dynamic list of posts',
     imgSourse: '',
     description: 'Dynamic list of posts with React/TypeScript',

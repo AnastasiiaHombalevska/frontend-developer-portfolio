@@ -1,5 +1,5 @@
-@use "./utils/mixins" as *;
-@use "./utils/variables" as *;
+@use './utils/mixins' as *;
+@use './utils/variables' as *;
 
 .portfolio {
   @include paddingInline;
@@ -38,9 +38,8 @@
   }
 
   &__btns-container {
-    width: 412px;
-    overflow-x: auto;
     display: flex;
+    align-items: center;
     gap: 5px;
 
     @include onSM {
@@ -48,14 +47,16 @@
     }
   }
 
-  &__btn {
-    border: none;
-    color: $mainTextColor;
+  &__select {
+    width: 115px;
     font-family: inherit;
-    background-color: inherit;
-    text-transform: capitalize;
+    background: $secondTextColor;
+    border-radius: 8px;
+    padding: 2px;
+  }
 
-    @include hover(color, $secondTextColor);
+    &__select:focus {
+      outline: none;
   }
 
   &__title {
