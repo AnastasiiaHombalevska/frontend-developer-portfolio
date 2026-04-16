@@ -1,5 +1,5 @@
-@use "./utils/mixins" as *;
-@use "./utils/variables" as *;
+@use './utils/mixins' as *;
+@use './utils/variables' as *;
 
 .card {
   display: flex;
@@ -10,11 +10,6 @@
 
   @include onSM {
     width: 90%;
-    max-width: 696px;
-  }
-
-  @include onMD {
-    width: 45%;
   }
 
   &__title {
@@ -40,7 +35,7 @@
     }
 
     &:not(:first-of-type)::before {
-      content: "";
+      content: '';
       width: 4px;
       height: 4px;
       background-color: $mainTextColor;
@@ -51,33 +46,31 @@
     }
   }
 
-  &__image-container {
-    position: relative;
+  &__container {
     width: 100%;
     border-radius: 16px;
-
-    &--1,
-    &--2,
-    &--3,
-    &--4,
-    &--5,
-    &--6 {
-      position: relative;
-    }
+    position: relative;
   }
 
-  &__image {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+  &__description {
+    font-family: monospace;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    margin: 0 auto;
+  }
+
+  & span {
+    color: #38bdf8;
   }
 
   &__overlay {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 
     background-color: rgba($mainTextColor, 0.3);
     border-radius: 16px;
@@ -91,27 +84,14 @@
     position: absolute;
 
     @include hover(opacity, 1);
-
-    &--1,
-    &--2,
-    &--3,
-    &--4,
-    &--5,
-    &--6 {
-      position: absolute;
-
-      &:hover {
-        @include hover(opacity, 1);
-      }
-    }
   }
 
   &__link {
-    @include forBtn;
     background-color: rgba($secondBackgroundColor, 0.6);
-    @include hover(text-shadow, $secondTextColor 2px 2px 2px);
     text-align: center;
-    width: 280px;
+    width: 200px;
+    @include forBtn;
+    @include hover(text-shadow, $secondTextColor 2px 2px 2px);
 
     &::after {
       right: calc(11% - 6px);

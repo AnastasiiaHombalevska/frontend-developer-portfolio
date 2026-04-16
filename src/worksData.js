@@ -1,15 +1,7 @@
-import scrUnitConversion from './images/portfolio-screenshots/metric-Imperial-unit-conversion.png';
-import scrPasswordGenerator from './images/portfolio-screenshots/random-password-generator.png';
-import scr2DGame from './images/portfolio-screenshots/2D-game.png';
-import scrCreativeBakery from './images/portfolio-screenshots/creative-bakery.png';
-import scrMuseum from './images/portfolio-screenshots/museum.png';
-import scrMuseum2 from './images/portfolio-screenshots/museum2-0.png';
-
 export default [
   {
     name: 'Unit Conversion',
-    imgSourse: scrUnitConversion,
-    description: 'screenshoot of metric/Imperial Unit Conversion',
+    description: 'Metric/Imperial Unit Conversion',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
       { 'View live': 'https://brilliant-cajeta-6a28eb.netlify.app/' },
@@ -22,8 +14,7 @@ export default [
 
   {
     name: 'Random password generator',
-    imgSourse: scrPasswordGenerator,
-    description: 'screenshoot of random password generator',
+    description: 'Random password generator',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
       { 'View live': 'https://random-password-withjs.netlify.app/' },
@@ -36,8 +27,7 @@ export default [
 
   {
     name: 'CV 2D-game with JavaScript',
-    imgSourse: scr2DGame,
-    description: 'screenshoot of CV 2D-game with JavaScript',
+    description: '2D-game with JavaScript as a CV',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
       {
@@ -53,8 +43,7 @@ export default [
 
   {
     name: 'Museum 2.0',
-    imgSourse: scrMuseum2,
-    description: 'landing page screenshoot of museum 2.0',
+    description: 'Landing page of museum 2.0',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
       { 'View live': 'https://anastasiiahombalevska.github.io/art_museum2.0/' },
@@ -66,8 +55,7 @@ export default [
 
   {
     name: 'Creative Bakery',
-    imgSourse: scrCreativeBakery,
-    description: 'landing page screenshoot of Creative Bakery',
+    description: 'Landing page of Creative Bakery',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
       {
@@ -82,8 +70,7 @@ export default [
 
   {
     name: 'Museum',
-    imgSourse: scrMuseum,
-    description: 'landing page screenshoot of museum',
+    description: 'Landing page of museum',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
       { 'View live': 'https://anastasiiahombalevska.github.io/art_museum/' },
@@ -93,7 +80,6 @@ export default [
 
   {
     name: 'Dynamic list of posts',
-    imgSourse: '',
     description: 'Dynamic list of posts with React/TypeScript',
     skills: ['JavaScript', 'React', 'TypeScript'],
     links: [
@@ -106,5 +92,6 @@ export default [
           'https://github.com/AnastasiiaHombalevska/React_TypeScript_dynamic-list-of-posts?tab=readme-ov-file',
       },
     ],
+    date: '04.2026'
   },
 ];
