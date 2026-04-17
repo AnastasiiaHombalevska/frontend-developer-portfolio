@@ -14,7 +14,7 @@
   }
 
   &__btn {
-    top: 50%;
+    top: 75%;
     transform: translateY(-50%);
     background-color: transparent;
     color: $mainTextColor;
@@ -46,9 +46,5 @@
     width: 50%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-  }
-
-  &__img:hover {
-    transform: scale(1.05);
   }
 }

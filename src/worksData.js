@@ -4,9 +4,9 @@ export default [
     description: 'Metric/Imperial Unit Conversion',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
-      { 'View live': 'https://brilliant-cajeta-6a28eb.netlify.app/' },
+      { 'Demo': 'https://brilliant-cajeta-6a28eb.netlify.app/' },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/unit-converter',
       },
     ],
@@ -17,9 +17,9 @@ export default [
     description: 'Random password generator',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
-      { 'View live': 'https://random-password-withjs.netlify.app/' },
+      { 'Demo': 'https://random-password-withjs.netlify.app/' },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/random-password-generator',
       },
     ],
@@ -31,11 +31,11 @@ export default [
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://anastasiiahombalevska.github.io/AnastasiiaHombalevska2D_portfolio_game-/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/AnastasiiaHombalevska2D_portfolio_game-',
       },
     ],
@@ -46,9 +46,9 @@ export default [
     description: 'Landing page of museum 2.0',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
-      { 'View live': 'https://anastasiiahombalevska.github.io/art_museum2.0/' },
+      { 'Demo': 'https://anastasiiahombalevska.github.io/art_museum2.0/' },
       {
-        'View github': 'https://github.com/AnastasiiaHombalevska/art_museum2.0',
+        'Github': 'https://github.com/AnastasiiaHombalevska/art_museum2.0',
       },
     ],
   },
@@ -59,10 +59,10 @@ export default [
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
       {
-        'View live': 'https://anastasiiahombalevska.github.io/Creative_Bakery/',
+        'Demo': 'https://anastasiiahombalevska.github.io/Creative_Bakery/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/Creative_Bakery',
       },
     ],
@@ -73,8 +73,8 @@ export default [
     description: 'Landing page of museum',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
-      { 'View live': 'https://anastasiiahombalevska.github.io/art_museum/' },
-      { 'View github': 'https://github.com/AnastasiiaHombalevska/art_museum' },
+      { 'Demo': 'https://anastasiiahombalevska.github.io/art_museum/' },
+      { 'Github': 'https://github.com/AnastasiiaHombalevska/art_museum' },
     ],
   },
 
@@ -84,11 +84,11 @@ export default [
     skills: ['JavaScript', 'React', 'TypeScript'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/React_TypeScript_dynamic-list-of-posts?tab=readme-ov-file',
       },
     ],
@@ -101,11 +101,11 @@ export default [
     skills: ['JavaScript', 'React'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
       },
       {
-        'View github':
+        'Github':
           'https://anastasiiahombalevska.github.io/frontend-developer-portfolio/',
       },
     ],
@@ -118,11 +118,11 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://jokeschall.netlify.app/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/joke_chall',
       },
     ],
@@ -135,11 +135,11 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://formwaveanim.netlify.app/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/wave_animation',
       },
     ],
@@ -152,11 +152,11 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'View live':
+        'Demo':
           'https://searchwidgetcss.netlify.app/',
       },
       {
-        'View github':
+        'Github':
           'https://github.com/AnastasiiaHombalevska/hidden_search_widget',
       },
     ],

@@ -9,7 +9,13 @@ export default function Card({ data }) {
     <div className="card">
       <div className={`card__container carousel__card`}>
 
-        <div className="card__overlay card__overlay">
+        <div className="card__description">
+          <p className='card__name'><span>project:</span> {name}</p>
+          <p className='card__skills'><span>stack:</span> {skills.join(', ')}</p>
+          <p className='card__additional'><span>description:</span> {description}</p>
+        </div>
+
+        <div className="card__overlay">
           {links &&
             links.map((item) => {
               const [key, value] = Object.entries(item)[0];
@@ -25,12 +31,6 @@ export default function Card({ data }) {
                 </a>
               );
             })}
-        </div>
-
-        <div className="card__description">
-          <p className='card__name'><span>project:</span> {name}</p>
-          <p className='card__skills'><span>stack:</span> {skills.join(', ')}</p>
-          <p className='card__additional'><span>description:</span> {description}</p>
         </div>
       </div>
     </div>
