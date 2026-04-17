@@ -1,28 +1,51 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import cardsData from '../worksData.js';
 import Card from './Card';
 import Carousel from './Carousel';
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [sortType, setSortType] = useState('date-new');
   const [filteredCards, setFilteredCards] = useState(cardsData);
 
   const skillMap = ['JavaScript', 'React', 'TypeScript', 'Redux', 'Node'];
 
   useEffect(() => {
-    if (activeFilter === 'All') {
-      setFilteredCards(cardsData);
-      return;
+    let result = [...cardsData];
+  
+    if (activeFilter !== 'All') {
+      const normalized = activeFilter.toLowerCase();
+  
+      result = result.filter((card) =>
+        card.skills.some((skill) =>
+          skill.toLowerCase().includes(normalized)
+        )
+      );
     }
+  
+    result.sort((a, b) => {
+      if (!a.date || !b.date) return 0;
 
-    const normalized = activeFilter.toLowerCase();
-
-    const result = cardsData.filter((card) =>
-      card.skills.some((skill) => skill.toLowerCase().includes(normalized))
-    );
-
+      const [mA, yA] = a.date.split('.');
+      const [mB, yB] = b.date.split('.');
+  
+      const numA = +yA * 100 + +mA;
+      const numB = +yB * 100 + +mB;
+  
+      if (sortType === 'date-new') {
+        return numB - numA;
+      }
+  
+      if (sortType === 'date-old') {
+        return numA - numB;
+      }
+  
+      return 0;
+    });
+  
     setFilteredCards(result);
-  }, [activeFilter]);
+  }, [activeFilter, sortType]);
+  
 
   return (
     <section className="portfolio" id="portfolio">
@@ -35,24 +58,40 @@ export default function Portfolio() {
         <h3 className="portfolio__title">Featured work</h3>
 
         <div className="portfolio__btns-container">
-          <label htmlFor="skill-select">Choose skill:</label>
+          <div className="portfolio__btns-sort">
+            <label className='portfolio__label' htmlFor="skill-select">Choose skill:</label>
 
-          <select
-            name="skills"
-            id="skill-select"
-            className="portfolio__select"
-            onChange={(e) => setActiveFilter(e.target.value)}
-          >
-            <option value="All" className="portfolio__btn">
-              All
-            </option>
+            <select
+              name="skills"
+              id="skill-select"
+              className="portfolio__select"
+              onChange={(e) => setActiveFilter(e.target.value)}
+            >
+              <option value="All" className="portfolio__btn">
+                All
+              </option>
 
-            {skillMap.map((skill) => (
+              {skillMap.map((skill) => (
                 <option value={skill} key={skill} className="portfolio__btn">
                   {skill}
                 </option>
               ))}
-          </select>
+            </select>
+          </div>
+
+          <div className="portfolio__btns-sort">
+            <label className='portfolio__label' htmlFor="sort-select">Sort by:</label>
+
+            <select
+              id="sort-select"
+              className="portfolio__select"
+              value={sortType}
+              onChange={(e) => setSortType(e.target.value)}
+            >
+              <option value="date-new" className="portfolio__btn">Newest first</option>
+              <option value="date-old" className="portfolio__btn">Oldest first</option>
+            </select>
+          </div>
         </div>
       </div>
 

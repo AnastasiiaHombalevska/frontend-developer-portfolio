@@ -10,6 +10,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/unit-converter',
       },
     ],
+    date: '06.2025'
   },
 
   {
@@ -23,6 +24,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/random-password-generator',
       },
     ],
+    date: '05.2025'
   },
 
   {
@@ -39,6 +41,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/AnastasiiaHombalevska2D_portfolio_game-',
       },
     ],
+    date: '08.2024'
   },
 
   {
@@ -51,6 +54,7 @@ export default [
         'Github': 'https://github.com/AnastasiiaHombalevska/art_museum2.0',
       },
     ],
+    date: '04.2024'
   },
 
   {
@@ -66,6 +70,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/Creative_Bakery',
       },
     ],
+    date: '08.2024'
   },
 
   {
@@ -76,6 +81,7 @@ export default [
       { 'Demo': 'https://anastasiiahombalevska.github.io/art_museum/' },
       { 'Github': 'https://github.com/AnastasiiaHombalevska/art_museum' },
     ],
+    date: '07.2024'
   },
 
   {
@@ -109,7 +115,7 @@ export default [
           'https://anastasiiahombalevska.github.io/frontend-developer-portfolio/',
       },
     ],
-    date: '2024'
+    date: '01.2024'
   },
 
   {
@@ -126,7 +132,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/joke_chall',
       },
     ],
-    date: '2025'
+    date: '07.2025'
   },
 
   {
@@ -143,7 +149,7 @@ export default [
           'https://github.com/AnastasiiaHombalevska/wave_animation',
       },
     ],
-    date: '2025'
+    date: '07.2025'
   },
 
   {
@@ -160,6 +166,6 @@ export default [
           'https://github.com/AnastasiiaHombalevska/hidden_search_widget',
       },
     ],
-    date: '2025'
+    date: '07.2025'
   },
 ];

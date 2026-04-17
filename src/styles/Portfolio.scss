@@ -39,24 +39,29 @@
 
   &__btns-container {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
 
     @include onSM {
+      flex-direction: row;
       gap: 24px;
     }
   }
 
+  &__label {
+    padding-right: 6px;
+  }
   &__select {
-    width: 115px;
+    width: 125px;
     font-family: inherit;
     background: $secondTextColor;
     border-radius: 8px;
     padding: 2px;
   }
 
-    &__select:focus {
-      outline: none;
+  &__select:focus {
+    outline: none;
   }
 
   &__title {

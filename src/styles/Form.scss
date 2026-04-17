@@ -57,21 +57,5 @@
     @include forBtn;
     @include hover(border, 1px solid $secondTextColor);
     @include hover(text-shadow, $secondTextColor 2px 2px 2px);
-
-    &::after {
-      right: calc(31% - 6px);
-    }
-
-    @include onSM {
-      &::after {
-        right: calc(39% - 6px);
-      }
-    }
-
-    @include onMD {
-      &::after {
-        right: calc(33% - 6px);
-      }
-    }
   }
 }
