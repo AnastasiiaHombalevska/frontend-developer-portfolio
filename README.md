@@ -16,7 +16,7 @@
 
 ### Links
 
-- DEMO: [@GitHub](https://anastasiiahombalevska.github.io/frontend-developer-portfolio/)
+- [DEMO](https://anastasiiahombalevska.github.io/frontend-developer-portfolio/)
 
 ## My process
 
