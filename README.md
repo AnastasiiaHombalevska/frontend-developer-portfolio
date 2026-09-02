@@ -16,7 +16,7 @@
 
 ### Links
 
-- Live Site URL: [@GitHub](https://anastasiiahombalevska.github.io/frontend-developer-portfolio/)
+- DEMO: [@GitHub](https://anastasiiahombalevska.github.io/frontend-developer-portfolio/)
 
 ## My process
 
