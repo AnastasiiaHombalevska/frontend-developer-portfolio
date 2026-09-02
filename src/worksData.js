@@ -4,13 +4,12 @@ export default [
     description: 'Metric/Imperial Unit Conversion',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
-      { 'Demo': 'https://brilliant-cajeta-6a28eb.netlify.app/' },
+      { Demo: 'https://brilliant-cajeta-6a28eb.netlify.app/' },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/unit-converter',
+        Github: 'https://github.com/AnastasiiaHombalevska/unit-converter',
       },
     ],
-    date: '06.2025'
+    date: '06.2025',
   },
 
   {
@@ -18,13 +17,13 @@ export default [
     description: 'Random password generator',
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
-      { 'Demo': 'https://random-password-withjs.netlify.app/' },
+      { Demo: 'https://random-password-withjs.netlify.app/' },
       {
-        'Github':
+        Github:
           'https://github.com/AnastasiiaHombalevska/random-password-generator',
       },
     ],
-    date: '05.2025'
+    date: '05.2025',
   },
 
   {
@@ -33,15 +32,14 @@ export default [
     skills: ['HTML', 'CSS', 'JavaScript'],
     links: [
       {
-        'Demo':
-          'https://anastasiiahombalevska.github.io/AnastasiiaHombalevska2D_portfolio_game-/',
+        Demo: 'https://anastasiiahombalevska.github.io/AnastasiiaHombalevska2D_portfolio_game-/',
       },
       {
-        'Github':
+        Github:
           'https://github.com/AnastasiiaHombalevska/AnastasiiaHombalevska2D_portfolio_game-',
       },
     ],
-    date: '08.2024'
+    date: '08.2024',
   },
 
   {
@@ -49,12 +47,12 @@ export default [
     description: 'Landing page of museum 2.0',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
-      { 'Demo': 'https://anastasiiahombalevska.github.io/art_museum2.0/' },
+      { Demo: 'https://anastasiiahombalevska.github.io/art_museum2.0/' },
       {
-        'Github': 'https://github.com/AnastasiiaHombalevska/art_museum2.0',
+        Github: 'https://github.com/AnastasiiaHombalevska/art_museum2.0',
       },
     ],
-    date: '04.2024'
+    date: '04.2024',
   },
 
   {
@@ -63,14 +61,13 @@ export default [
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
       {
-        'Demo': 'https://anastasiiahombalevska.github.io/Creative_Bakery/',
+        Demo: 'https://anastasiiahombalevska.github.io/Creative_Bakery/',
       },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/Creative_Bakery',
+        Github: 'https://github.com/AnastasiiaHombalevska/Creative_Bakery',
       },
     ],
-    date: '08.2024'
+    date: '08.2024',
   },
 
   {
@@ -78,10 +75,10 @@ export default [
     description: 'Landing page of museum',
     skills: ['HTML', 'SASS(SCSS)'],
     links: [
-      { 'Demo': 'https://anastasiiahombalevska.github.io/art_museum/' },
-      { 'Github': 'https://github.com/AnastasiiaHombalevska/art_museum' },
+      { Demo: 'https://anastasiiahombalevska.github.io/art_museum/' },
+      { Github: 'https://github.com/AnastasiiaHombalevska/art_museum' },
     ],
-    date: '07.2024'
+    date: '07.2024',
   },
 
   {
@@ -90,15 +87,14 @@ export default [
     skills: ['JavaScript', 'React', 'TypeScript'],
     links: [
       {
-        'Demo':
-          'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
+        Demo: 'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
       },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/React_TypeScript_dynamic-list-of-posts?tab=readme-ov-file',
+        Github:
+          'https://github.com/AnastasiiaHombalevska/React_TypeScript_dynamic-list-of-posts',
       },
     ],
-    date: '04.2026'
+    date: '04.2026',
   },
 
   {
@@ -107,15 +103,14 @@ export default [
     skills: ['JavaScript', 'React'],
     links: [
       {
-        'Demo':
-          'https://anastasiiahombalevska.github.io/React_TypeScript_dynamic-list-of-posts/',
+        Demo: 'https://anastasiiahombalevska.github.io/frontend-developer-portfolio/',
       },
       {
-        'Github':
-          'https://anastasiiahombalevska.github.io/frontend-developer-portfolio/',
+        Github:
+          'https://github.com/AnastasiiaHombalevska/frontend-developer-portfolio',
       },
     ],
-    date: '01.2024'
+    date: '01.2024',
   },
 
   {
@@ -124,15 +119,13 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'Demo':
-          'https://jokeschall.netlify.app/',
+        Demo: 'https://jokeschall.netlify.app/',
       },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/joke_chall',
+        Github: 'https://github.com/AnastasiiaHombalevska/joke_chall',
       },
     ],
-    date: '07.2025'
+    date: '07.2025',
   },
 
   {
@@ -141,15 +134,13 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'Demo':
-          'https://formwaveanim.netlify.app/',
+        Demo: 'https://formwaveanim.netlify.app/',
       },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/wave_animation',
+        Github: 'https://github.com/AnastasiiaHombalevska/wave_animation',
       },
     ],
-    date: '07.2025'
+    date: '07.2025',
   },
 
   {
@@ -158,14 +149,12 @@ export default [
     skills: ['JavaScript'],
     links: [
       {
-        'Demo':
-          'https://searchwidgetcss.netlify.app/',
+        Demo: 'https://searchwidgetcss.netlify.app/',
       },
       {
-        'Github':
-          'https://github.com/AnastasiiaHombalevska/frontend-developer-portfolio',
+        Github: 'https://github.com/AnastasiiaHombalevska/hidden_search_widget',
       },
     ],
-    date: '07.2025'
+    date: '07.2025',
   },
 ];
