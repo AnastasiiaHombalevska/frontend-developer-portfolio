@@ -163,7 +163,7 @@ export default [
       },
       {
         'Github':
-          'https://github.com/AnastasiiaHombalevska/hidden_search_widget',
+          'https://github.com/AnastasiiaHombalevska/frontend-developer-portfolio',
       },
     ],
     date: '07.2025'
